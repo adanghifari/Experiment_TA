@@ -1,0 +1,112 @@
+{
+  "method": "front_train",
+  "accuracy": 0.88284,
+  "precision_macro": 0.78197,
+  "recall_macro": 0.81555,
+  "f1_macro": 0.79696,
+  "precision_safe": 0.62069,
+  "recall_safe": 0.71591,
+  "f1_safe": 0.66491,
+  "support_safe": 176,
+  "precision_phone": 0.94325,
+  "recall_phone": 0.9152,
+  "f1_phone": 0.92901,
+  "support_phone": 908,
+  "support_total": 1084,
+  "confusion_matrix": [
+    [
+      126,
+      50
+    ],
+    [
+      77,
+      831
+    ]
+  ],
+  "classification_report": {
+    "safe_driving": {
+      "precision": 0.6206896551724138,
+      "recall": 0.7159090909090909,
+      "f1-score": 0.6649076517150396,
+      "support": 176.0
+    },
+    "phone_use": {
+      "precision": 0.9432463110102156,
+      "recall": 0.9151982378854625,
+      "f1-score": 0.9290106204583566,
+      "support": 908.0
+    },
+    "accuracy": 0.8828413284132841,
+    "macro avg": {
+      "precision": 0.7819679830913147,
+      "recall": 0.8155536643972767,
+      "f1-score": 0.7969591360866981,
+      "support": 1084.0
+    },
+    "weighted avg": {
+      "precision": 0.8908754886601666,
+      "recall": 0.8828413284132841,
+      "f1-score": 0.8861304336513236,
+      "support": 1084.0
+    }
+  },
+  "roc_auc": 0.89058,
+  "pr_auc": 0.97122,
+  "ece_binary": 0.12294,
+  "brier_score": 0.10083,
+  "view": "front",
+  "split": "train",
+  "checkpoint_path": "D:\\Skripsi\\Experiment_TA\\experiment_23\\checkpoints\\seed44\\front\\best.pt",
+  "checkpoint_sha256": "6707cf1d1e833ebb267aedce20a00c8f961d27e7f9a8174d75510a300e76e387",
+  "best_epoch": 9,
+  "checkpoint_selection": {
+    "monitored_metric": "val_macro_f1",
+    "mode": "max",
+    "best_epoch": 9,
+    "reason": "Best validation val_macro_f1 so far."
+  },
+  "hyperparameters": {
+    "view": "front",
+    "run_type": "experiment_run",
+    "learning_rate": 3e-05,
+    "weight_decay": 0.0005,
+    "dropout": 0.4,
+    "label_smoothing": 0.0,
+    "class_weights": [
+      2.5,
+      1.0
+    ],
+    "class_weight_gamma": 1.0,
+    "freeze_stages": 5,
+    "early_stopping_patience": 4,
+    "lr_scheduler_patience": 1,
+    "lr_scheduler_factor": 0.5,
+    "frame_stride": 30,
+    "threshold": 0.5,
+    "split_seed": 42,
+    "training_seed": 44,
+    "seed": 44,
+    "seed_training": true,
+    "batch_size": 32,
+    "checkpoint_monitor": "val_macro_f1",
+    "checkpoint_monitor_mode": "max",
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau",
+    "scheduler_monitor": "val_macro_f1",
+    "scheduler_step_timing": "after_validation",
+    "backbone": "EfficientNetV2-S",
+    "pretrained": true,
+    "loss_function": "CrossEntropyLoss",
+    "augmentation_train": {
+      "random_horizontal_flip": true,
+      "random_rotation_degree": 68,
+      "color_jitter_factor": 1.2
+    },
+    "augmentation_eval": {
+      "random_horizontal_flip": false,
+      "random_rotation_degree": 0,
+      "color_jitter_factor": 0
+    },
+    "class_weight_gamma_scope": "training_class_weights_only_not_fusion"
+  }
+}

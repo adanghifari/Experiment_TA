@@ -1,0 +1,26 @@
+# Master Experiment Summary
+
+| Experiment | Run Type | Stride | Seed Training | Front Train Eval F1 | Front Val Eval F1 | Front F1 Gap | Front Test Macro F1 | Front Best Epoch | Side Train Eval F1 | Side Val Eval F1 | Side F1 Gap | Side Test Macro F1 | Side Best Epoch | Average Fusion Macro F1 | Adaptive Fusion Macro F1 | Safe Recall | Phone Recall | Checkpoint Criterion Front | Checkpoint Criterion Side | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| experiment_1 | experiment_run | 1 | True | 0.98852 | 0.88682 | 0.1017 | 0.83759 | 6 | 0.87232 | 0.75748 | 0.11484 | 0.61415 | 1 | 0.81773 | 0.81773 | 0.55263 | 0.98834 | val_macro_f1 | val_macro_f1 |  |
+| experiment_2 | experiment_run | 1 | True | 1.0 | 0.88748 | 0.11252 | 0.78267 | 17 | 0.99376 | 0.86057 | 0.13319 | 0.78792 | 8 | 0.83402 | 0.83402 | 0.60526 | 0.98251 | val_macro_f1 | val_macro_f1 |  |
+| experiment_3 | experiment_run | 1 | True | 0.99643 | 0.84723 | 0.1492 | 0.75341 | 8 | 0.98326 | 0.79949 | 0.18377 | 0.81679 | 4 | 0.82372 | 0.82372 | 0.56579 | 0.98834 | val_macro_f1 | val_macro_f1 |  |
+| experiment_4 | experiment_run | 5 | True | 0.97133 | 0.80977 | 0.16156 | 0.82133 | 6 | 0.99555 | 0.83752 | 0.15803 | 0.8121 | 16 | 0.85253 | 0.85253 | 0.68421 | 0.97085 | val_macro_f1 | val_macro_f1 |  |
+| experiment_5 | experiment_run | 5 | True | 0.82968 | 0.77469 | 0.05499 | 0.78785 | 27 | 0.58698 | 0.58956 | -0.00258 | 0.54586 | 4 | 0.79023 | 0.79023 | 0.67105 | 0.91837 | val_macro_f1 | val_macro_f1 |  |
+| experiment_6 | experiment_run | 5 | True | 0.61501 | 0.63648 | -0.02147 | 0.55558 | 4 | 0.63517 | 0.62099 | 0.01418 | 0.57932 | 11 | 0.60963 | 0.60963 | 0.31579 | 0.88921 | val_macro_f1 | val_macro_f1 |  |
+| experiment_7 | experiment_run | 5 | True | 0.57203 | 0.59678 | -0.02475 | 0.55968 | 3 | 0.53994 | 0.55419 | -0.01425 | 0.51949 | 6 | 0.59192 | 0.59192 | 0.40789 | 0.80175 | val_macro_f1 | val_macro_f1 |  |
+| experiment_8 | experiment_run | 15 | True | 0.95854 | 0.81451 | 0.14403 | 0.85931 | 6 | 0.97223 | 0.81547 | 0.15676 | 0.78012 | 14 | 0.87074 | 0.87074 | 0.75 | 0.96501 | val_macro_f1 | val_macro_f1 |  |
+| experiment_9 | experiment_run | 30 | True | 0.95763 | 0.78603 | 0.1716 | 0.8213 | 13 | 0.65701 | 0.69447 | -0.03746 | 0.57174 | 4 | 0.7861 | 0.7861 | 0.525 | 0.97222 | val_macro_f1 | val_macro_f1 |  |
+| experiment_10 | experiment_run | 30 | True | 0.81123 | 0.72688 | 0.08435 | 0.74014 | 25 | 0.70216 | 0.69447 | 0.00769 | 0.63333 | 9 | 0.76694 | 0.76694 | 0.575 | 0.93333 | val_macro_f1 | val_macro_f1 |  |
+| experiment_11 | experiment_run | 30 | True | 0.79992 | 0.72222 | 0.0777 | 0.73985 | 21 | 0.71511 | 0.70735 | 0.00776 | 0.62625 | 14 | 0.76142 | 0.76142 | 0.575 | 0.92778 | val_macro_f1 | val_macro_f1 |  |
+| experiment_12 | experiment_run | 30 | True | 0.79992 | 0.71762 | 0.0823 | 0.73985 | 21 | 0.71511 | 0.70735 | 0.00776 | 0.62625 | 14 | 0.76142 | 0.76142 | 0.575 | 0.92778 | val_macro_f1 | val_macro_f1 |  |
+| experiment_13 | experiment_run | 30 | True | 0.84774 | 0.75562 | 0.09212 | 0.77399 | 19 | 0.7058 | 0.75 | -0.0442 | 0.62023 | 11 | 0.78412 | 0.78412 | 0.575 | 0.95 | val_macro_f1 | val_macro_f1 |  |
+| experiment_14 | experiment_run | 30 | True | 0.7932 | 0.72581 | 0.06739 | 0.76626 | 9 | 0.7058 | 0.75 | -0.0442 | 0.62023 | 11 | 0.78059 | 0.78059 | 0.5 | 0.97778 | val_macro_f1 | val_macro_f1 |  |
+| experiment_15 | experiment_run | 30 | True | 0.7932 | 0.72581 | 0.06739 | 0.76626 | 9 | 0.76166 | 0.74014 | 0.02152 | 0.64349 | 8 | 0.77992 | 0.77992 | 0.525 | 0.96667 | val_macro_f1 | val_macro_f1 |  |
+| experiment_16 | experiment_run | 20 | True | 0.77003 | 0.71443 | 0.0556 | 0.78797 | 6 | 0.8874 | 0.73807 | 0.14933 | 0.75905 | 28 | 0.78589 | 0.78589 | 0.64407 | 0.92395 | val_macro_f1 | val_loss |  |
+| experiment_17 | experiment_run | 20 | True | 0.77003 | 0.71443 | 0.0556 | 0.78797 | 6 | 0.8874 | 0.73807 | 0.14933 | 0.75905 | 28 | 0.78589 | 0.78589 | 0.64407 | 0.92395 | val_macro_f1 | val_loss |  |
+| experiment_18 | experiment_run | 30 | True | 0.7932 | 0.72581 | 0.06739 | 0.76626 | 9 | 0.78366 | 0.68238 | 0.10128 | 0.67468 | 26 | 0.81113 | 0.81113 | 0.625 | 0.95556 | val_macro_f1 | val_loss |  |
+| experiment_19 | experiment_run | 30 | True | 0.7932 | 0.72581 | 0.06739 | 0.76626 | 9 | 0.78853 | 0.68238 | 0.10615 | 0.68372 | 26 | 0.79471 | 0.79471 | 0.6 | 0.95 | val_macro_f1 | val_loss |  |
+| experiment_20 | experiment_run | 30 | True | 0.7932 | 0.72581 | 0.06739 | 0.76626 | 9 | 0.96089 | 0.77926 | 0.18163 | 0.76019 | 25 | 0.77327 | 0.77327 | 0.55 | 0.95 | val_macro_f1 | val_loss |  |
+| experiment_21 | experiment_run | 30 | True | 0.7932 | 0.72581 | 0.06739 | 0.76626 | 9 | 0.89192 | 0.71014 | 0.18178 | 0.75067 | 25 | 0.79614 | 0.79614 | 0.575 | 0.96111 | val_macro_f1 | val_loss |  |
+| experiment_22 | experiment_run | 30 | True | 0.7932 | 0.72581 | 0.06739 | 0.76626 | 9 | 0.86893 | 0.69447 | 0.17446 | 0.69915 | 25 | 0.80686 | 0.80686 | 0.6 | 0.96111 | val_macro_f1 | val_loss |  |

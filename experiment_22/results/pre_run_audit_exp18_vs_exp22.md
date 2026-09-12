@@ -1,0 +1,74 @@
+﻿# Pre-run Hard Audit: experiment_18 vs experiment_22
+
+Expected only behavioral differences: Side rotation 45 -> 35 and Side color jitter 0.8 -> 0.7. Both are one conceptual factor: Side augmentation strength.
+
+## Split Verification
+
+- train: 35 subjects [5,6,7,9,12,13,14,16,18,19,23,24,25,26,28,29,30,31,32,33,34,35,36,37,38,39,40,43,44,45,46,47,48,49,50]
+- val: 8 subjects [1,2,3,15,20,22,27,41]
+- test: 7 subjects [4,8,10,11,17,21,42]
+
+Sample counts after stride=30: train 1084/view, val 225/view, test 220/view.
+
+## Verdict
+
+PASS: no unintended behavioral mismatch found. Training may proceed. `EXPERIMENT_NAME` differs as required identity metadata.
+
+## Audit Table
+
+| Parameter | Experiment 18 | Experiment 22 | Status |
+|---|---|---|---|
+| seed | `42` | `42` | EXACT MATCH |
+| stride | `30` | `30` | EXACT MATCH |
+| image size | `` | `` | EXACT MATCH |
+| batch size | `32` | `32` | EXACT MATCH |
+| max epochs | `30` | `30` | EXACT MATCH |
+| pretrained | `True` | `True` | EXACT MATCH |
+| Front LR | `0.00003` | `0.00003` | EXACT MATCH |
+| Side LR | `0.00002` | `0.00002` | EXACT MATCH |
+| Front dropout | `0.4` | `0.4` | EXACT MATCH |
+| Side dropout | `0.4` | `0.4` | EXACT MATCH |
+| Front early stopping | `4` | `4` | EXACT MATCH |
+| Side early stopping | `5` | `5` | EXACT MATCH |
+| weight decay global | `0.0005` | `0.0005` | EXACT MATCH |
+| Front WD | `0.0005` | `0.0005` | EXACT MATCH |
+| Side WD | `0.001` | `0.001` | EXACT MATCH |
+| Front freeze | `5` | `5` | EXACT MATCH |
+| Side freeze | `4` | `4` | EXACT MATCH |
+| label smoothing | `0.0` | `0.0` | EXACT MATCH |
+| class weight | `[2.5, 1.0]` | `[2.5, 1.0]` | EXACT MATCH |
+| Front gamma | `1.0` | `1.0` | EXACT MATCH |
+| Side gamma | `1.0` | `1.0` | EXACT MATCH |
+| Front scheduler patience | `1` | `1` | EXACT MATCH |
+| Side scheduler patience | `2` | `2` | EXACT MATCH |
+| scheduler factor | `0.5` | `0.5` | EXACT MATCH |
+| Front rotation | `68` | `68` | EXACT MATCH |
+| Front color jitter | `1.2` | `1.2` | EXACT MATCH |
+| Side rotation | `45` | `35` | INTENTIONAL DIFFERENCE |
+| Side color jitter | `0.8` | `0.7` | INTENTIONAL DIFFERENCE |
+| threshold | `0.5` | `0.5` | EXACT MATCH |
+| Front checkpoint monitor | `'val_macro_f1'` | `'val_macro_f1'` | EXACT MATCH |
+| Side checkpoint monitor | `'val_loss'` | `'val_loss'` | EXACT MATCH |
+| experiment name | `'experiment_18'` | `'experiment_22'` | REQUIRED IDENTITY DIFFERENCE |
+| subject split IDs train | `[5,6,7,9,12,13,14,16,18,19,23,24,25,26,28,29,30,31,32,33,34,35,36,37,38,39,40,43,44,45,46,47,48,49,50]` | `[5,6,7,9,12,13,14,16,18,19,23,24,25,26,28,29,30,31,32,33,34,35,36,37,38,39,40,43,44,45,46,47,48,49,50]` | EXACT MATCH |
+| stride-30 sample count train | `front=1084;side=1084` | `front=1084;side=1084` | EXACT MATCH |
+| subject split IDs val | `[1,2,3,15,20,22,27,41]` | `[1,2,3,15,20,22,27,41]` | EXACT MATCH |
+| stride-30 sample count val | `front=225;side=225` | `front=225;side=225` | EXACT MATCH |
+| subject split IDs test | `[4,8,10,11,17,21,42]` | `[4,8,10,11,17,21,42]` | EXACT MATCH |
+| stride-30 sample count test | `front=220;side=220` | `front=220;side=220` | EXACT MATCH |
+| class mapping safe=0 phone=1 | `False` | `False` | EXACT MATCH |
+| source hash dataset.py | `EFA8D324EBC5906AF6ECE66DB54E3AB8A58DE6A69B1453418541D58D21F88BA5` | `EFA8D324EBC5906AF6ECE66DB54E3AB8A58DE6A69B1453418541D58D21F88BA5` | EXACT MATCH |
+| source hash evaluate.py | `BCB72C59647788EF7C3F047546A88BDB12AC19B4457708513ADCB6F38680EDED` | `BCB72C59647788EF7C3F047546A88BDB12AC19B4457708513ADCB6F38680EDED` | EXACT MATCH |
+| source hash fusion.py | `68A20C17E91725F8EF1BED7EB017490271537F52D6F017C5E0BB9B012CD82062` | `68A20C17E91725F8EF1BED7EB017490271537F52D6F017C5E0BB9B012CD82062` | EXACT MATCH |
+| source hash metrics.py | `F0FFB41CD2B05F427E500385779E80CEFBA5912158A35EB776004AB3A6E38A45` | `F0FFB41CD2B05F427E500385779E80CEFBA5912158A35EB776004AB3A6E38A45` | EXACT MATCH |
+| source hash model.py | `AFDB54B59AA72A2DA271DD19924787938972268A79166E0162808DD3D4737B66` | `AFDB54B59AA72A2DA271DD19924787938972268A79166E0162808DD3D4737B66` | EXACT MATCH |
+| source hash train.py | `7FD8F0D4316209DC0F389089EEB5C0FB8AF37DD4FF4A79C5EE32402FE3FBB016` | `7FD8F0D4316209DC0F389089EEB5C0FB8AF37DD4FF4A79C5EE32402FE3FBB016` | EXACT MATCH |
+| source hash summarize.py | `CB32BB2EF719F12525B913E4AE1C207B93449BAEE98261176E06BCBA64D0C3FA` | `CB32BB2EF719F12525B913E4AE1C207B93449BAEE98261176E06BCBA64D0C3FA` | EXACT MATCH |
+| source hash run_experiment.ps1 | `DBABDCEE78D89443F1E2203160FDD8D8C4B09FC8607949F8A64782FF11DCA55A` | `DBABDCEE78D89443F1E2203160FDD8D8C4B09FC8607949F8A64782FF11DCA55A` | EXACT MATCH |
+
+## Run Command
+
+```powershell
+.\run_all.ps1 -From 22 -To 22
+```
+

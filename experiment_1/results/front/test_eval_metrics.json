@@ -1,0 +1,90 @@
+{
+  "method": "front_test",
+  "accuracy": 0.91647,
+  "precision_macro": 0.91022,
+  "recall_macro": 0.79534,
+  "f1_macro": 0.83759,
+  "precision_safe": 0.90196,
+  "recall_safe": 0.60526,
+  "f1_safe": 0.72441,
+  "support_safe": 76,
+  "precision_phone": 0.91848,
+  "recall_phone": 0.98542,
+  "f1_phone": 0.95077,
+  "support_phone": 343,
+  "support_total": 419,
+  "confusion_matrix": [
+    [
+      46,
+      30
+    ],
+    [
+      5,
+      338
+    ]
+  ],
+  "classification_report": {
+    "safe_driving": {
+      "precision": 0.9019607843137255,
+      "recall": 0.6052631578947368,
+      "f1-score": 0.7244094488188977,
+      "support": 76.0
+    },
+    "phone_use": {
+      "precision": 0.9184782608695652,
+      "recall": 0.9854227405247813,
+      "f1-score": 0.9507735583684951,
+      "support": 343.0
+    },
+    "accuracy": 0.9164677804295943,
+    "macro avg": {
+      "precision": 0.9102195225916454,
+      "recall": 0.795342949209759,
+      "f1-score": 0.8375915035936964,
+      "support": 419.0
+    },
+    "weighted avg": {
+      "precision": 0.9154822508021576,
+      "recall": 0.9164677804295943,
+      "f1-score": 0.9097146745361098,
+      "support": 419.0
+    }
+  },
+  "roc_auc": 0.91725,
+  "pr_auc": 0.97108,
+  "ece_binary": 0.05595,
+  "brier_score": 0.07046,
+  "view": "front",
+  "split": "test",
+  "checkpoint_path": "D:\\Skripsi\\Experiment_TA\\experiment_1\\checkpoints\\front\\best.pt",
+  "checkpoint_sha256": "72867ae9b71af203f3ef66a732c1663cfb5d5a8387380d4d4cc1a0af001bc89b",
+  "best_epoch": 6,
+  "checkpoint_selection": {
+    "monitored_metric": "val_macro_f1",
+    "mode": "max",
+    "best_epoch": 6
+  },
+  "hyperparameters": {
+    "view": "front",
+    "run_type": "experiment_run",
+    "loss_function": "BCEWithLogitsLoss",
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0,
+    "dropout": 0.3,
+    "freeze_stages": 0,
+    "class_weights": null,
+    "label_smoothing": 0.0,
+    "scheduler": null,
+    "frame_stride": 15,
+    "threshold": 0.5,
+    "seed": 42,
+    "seed_training": true,
+    "batch_size": 32,
+    "checkpoint_monitor": "val_macro_f1",
+    "checkpoint_monitor_mode": "max",
+    "backbone": "EfficientNetV2-S",
+    "pretrained": true,
+    "output_logits": 1
+  }
+}

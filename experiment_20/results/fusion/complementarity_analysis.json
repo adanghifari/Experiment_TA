@@ -1,0 +1,22 @@
+{
+  "average_fusion": {
+    "both_correct": 173,
+    "both_wrong": 15,
+    "front_correct_side_wrong": 17,
+    "front_wrong_side_correct": 15,
+    "side_only_correct": 15,
+    "fusion_fixed_front_error": 12,
+    "fusion_broke_front_correct": 9,
+    "support": 220
+  },
+  "adaptive_fusion": {
+    "both_correct": 173,
+    "both_wrong": 15,
+    "front_correct_side_wrong": 17,
+    "front_wrong_side_correct": 15,
+    "side_only_correct": 15,
+    "fusion_fixed_front_error": 12,
+    "fusion_broke_front_correct": 9,
+    "support": 220
+  }
+}

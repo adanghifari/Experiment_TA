@@ -1,0 +1,63 @@
+{
+  "view": "front",
+  "best_epoch": 6,
+  "checkpoint_path": "D:\\Skripsi\\Experiment_TA\\experiment_1\\checkpoints\\front\\best.pt",
+  "checkpoint_sha256": "72867ae9b71af203f3ef66a732c1663cfb5d5a8387380d4d4cc1a0af001bc89b",
+  "history_path": "D:\\Skripsi\\Experiment_TA\\experiment_1\\results\\front\\history.json",
+  "history_csv_path": "D:\\Skripsi\\Experiment_TA\\experiment_1\\results\\front\\history.csv",
+  "checkpoint_selection": {
+    "monitored_metric": "val_macro_f1",
+    "mode": "max"
+  },
+  "resolved_config": {
+    "view": "front",
+    "run_type": "experiment_run",
+    "loss_function": "BCEWithLogitsLoss",
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0,
+    "dropout": 0.3,
+    "freeze_stages": 0,
+    "class_weights": null,
+    "label_smoothing": 0.0,
+    "scheduler": null,
+    "frame_stride": 15,
+    "threshold": 0.5,
+    "seed": 42,
+    "seed_training": true,
+    "batch_size": 32,
+    "checkpoint_monitor": "val_macro_f1",
+    "checkpoint_monitor_mode": "max",
+    "backbone": "EfficientNetV2-S",
+    "pretrained": true,
+    "output_logits": 1
+  },
+  "best_epoch_metrics": {
+    "epoch": 6,
+    "train_loss": 0.0275,
+    "train_accuracy": 0.99219,
+    "train_macro_f1": 0.98541,
+    "val_loss": 0.20009,
+    "val_accuracy": 0.93735,
+    "val_macro_f1": 0.88682,
+    "f1_gap": 0.09859,
+    "loss_gap": 0.17259,
+    "learning_rate": 0.0001,
+    "epoch_seconds": 22.41
+  },
+  "environment": {
+    "timestamp": "2026-09-11T00:55:50",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytorch_version": "2.11.0+cu128",
+    "timm_version": "1.0.27",
+    "cuda_available": true,
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "git_commit": null,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false
+  },
+  "elapsed_seconds": 250.74,
+  "elapsed_minutes": 4.179
+}

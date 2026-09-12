@@ -1,0 +1,20 @@
+experiment,source_experiment,source_commit,source_timestamp,scenario,front_macro_f1,side_macro_f1,average_fusion_macro_f1,adaptive_fusion_macro_f1,status
+experiment_1,Exp 1,9f7f77270,2026-07-05T23:48:29+07:00,Baseline awal,0.82245,0.83697,0.84097,0.84097,historical_reproduction_mapping
+experiment_2,Exp 2,4f53a8481,2026-07-06T21:23:40+07:00,Perbaikan pipeline awal,0.80925,0.76181,0.79197,0.79197,historical_reproduction_mapping
+experiment_3,Exp 3,a001fbbbc,2026-07-06T23:03:38+07:00,Perbaikan LR dan freeze awal,0.82124,0.83443,0.83915,0.83915,historical_reproduction_mapping
+experiment_4,Exp 4,c7f4459a,2026-07-07T00:23:16+07:00,Regularisasi dan stride 5,0.88252,0.80318,0.84434,0.84434,historical_reproduction_mapping
+experiment_5,Exp 5,ca6137a9,2026-07-07T06:30:41+07:00,LR rendah dengan regularisasi v4,0.8375,0.73806,0.79897,0.79897,historical_reproduction_mapping
+experiment_6,Exp 6,c486978f,2026-07-07T23:19:51+07:00,Config v5 awal,0.82925,0.73263,0.82873,0.82873,historical_reproduction_mapping
+experiment_7,Exp 7,ca41e3f2,2026-07-08T07:10:42+07:00,Optimasi side view,0.8074,0.73011,0.83282,0.83282,historical_reproduction_mapping
+experiment_8,Exp 8,08457b78,2026-07-08T17:13:04+07:00,Golden Balance,0.86314,0.77124,0.87494,0.87494,historical_reproduction_mapping
+experiment_9,Exp 9,1563c170,2026-07-08T17:56:08+07:00,Extreme temporal subsampling,0.78495,0.75077,0.80444,0.80444,historical_reproduction_mapping
+experiment_10,Exp 11 Awal,465170a4,2026-07-09T00:30:11+07:00,Optimasi front regularization,0.74014,0.63333,0.76694,0.76694,historical_reproduction_mapping
+experiment_11,Exp 12,9bd91eb8,2026-07-12T01:46:00+07:00,Baseline ablation / side view rescue,0.73985,0.62625,0.76142,0.76142,historical_reproduction_mapping
+experiment_12,Exp 13 Lama,070b2268,2026-07-12T03:01:05+07:00,WD dan LS campur,0.7206,0.62625,0.7773,,historical_reproduction_mapping
+experiment_13,Exp 13 Baru,adf5d47d/f5b4ad3,2026-07-12T03:44:53+07:00,Isolasi label smoothing,0.77399,0.62023,0.78412,,historical_reproduction_mapping
+experiment_14,Exp 14A Revisi / Final v1,e16ce8c7,2026-08-03T09:10:41+07:00,Stabilisasi front / Final v1,0.76626,0.62023,0.78059,0.78059,historical_reproduction_mapping
+experiment_15,Exp 19 Final Valid,4c66c650/cc05a13d,2026-07-18T14:08:14+07:00,Gamma 0.50 validation-selected,,0.64349,0.7799,,historical_reproduction_mapping
+experiment_16,Exp 21B,272e6028,2026-08-03T10:16:59+07:00,Stabilisasi front stride 20,0.78797,0.66044,0.7588,0.7588,historical_reproduction_mapping
+experiment_17,Exp 21C,df6ddaac,2026-08-03T10:50:45+07:00,Stabilisasi side stride 20,0.78797,0.76085,0.81626,0.81626,historical_reproduction_mapping
+experiment_18,Exp 21D,0459832c,2026-08-03T14:59:46+07:00,Regularisasi side stride 30,0.76626,0.73985,0.81113,0.81113,historical_reproduction_mapping
+experiment_19,Exp 21E / Final v2,0459832c,2026-08-03T14:59:46+07:00,Light regularized side stride 30 / Final v2,0.76626,0.7159,0.82504,0.82504,historical_reproduction_mapping

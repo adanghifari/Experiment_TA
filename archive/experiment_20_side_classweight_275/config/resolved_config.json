@@ -1,0 +1,56 @@
+{
+  "frame_stride": 30,
+  "learning_rate_front": 3e-05,
+  "learning_rate_side": 2e-05,
+  "weight_decay_front": 0.0005,
+  "weight_decay_side": 0.001,
+  "dropout_front": 0.4,
+  "dropout_side": 0.4,
+  "label_smoothing": 0.0,
+  "class_weights": [
+    2.5,
+    1.0
+  ],
+  "class_weight_gamma_front": 1.0,
+  "class_weight_gamma_side": 1.0,
+  "freeze_front": 5,
+  "freeze_side": 4,
+  "optimizer": "AdamW",
+  "scheduler": "ReduceLROnPlateau",
+  "scheduler_patience_front": 1,
+  "scheduler_patience_side": 2,
+  "early_stopping_patience_front": 4,
+  "early_stopping_patience_side": 5,
+  "checkpoint_monitor_front": "val_macro_f1",
+  "checkpoint_monitor_side": "val_loss",
+  "batch_size": 32,
+  "threshold": 0.5,
+  "augmentation_front": {
+    "random_horizontal_flip_p": 0.5,
+    "random_rotation_degree": 68,
+    "color_jitter_factor": 1.2
+  },
+  "augmentation_side": {
+    "random_horizontal_flip_p": 0.5,
+    "random_rotation_degree": 45,
+    "color_jitter_factor": 0.8
+  },
+  "seed_training": true,
+  "sort_dataframe": false,
+  "sort_paired": false,
+  "run_type": "experiment_run",
+  "loss_function": "CrossEntropyLoss",
+  "pretrained": true,
+  "seed": 42,
+  "experiment": "experiment_20",
+  "scenario": null,
+  "class_weights_schema": "view_specific",
+  "class_weights_front": [
+    2.5,
+    1
+  ],
+  "class_weights_side": [
+    2.75,
+    1
+  ]
+}
