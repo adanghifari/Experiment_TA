@@ -1,0 +1,10 @@
+﻿metric,definition,status,evidence
+Accuracy,"sklearn accuracy_score(labels,preds)",VERIFIED,experiment_18/src/metrics.py
+Macro F1,f1_score average=macro zero_division=0,VERIFIED,experiment_18/src/metrics.py
+Macro Precision/Recall,precision_score/recall_score average=macro zero_division=0,VERIFIED,experiment_18/src/metrics.py
+Per-class metrics,"classification_report labels=[0,1] target_names=[safe_driving,phone_use]",VERIFIED,experiment_18/src/metrics.py
+ROC-AUC,"roc_auc_score(labels, phone probability)",VERIFIED,experiment_18/src/metrics.py
+PR-AUC,"average_precision_score(labels, phone probability)",VERIFIED,experiment_18/src/metrics.py
+ECE,10-bin binary calibration error,VERIFIED,experiment_18/src/metrics.py
+Brier,mean squared error between phone probability and label,VERIFIED,experiment_18/src/metrics.py
+Confusion Matrix,"rows=true [safe,phone], cols=pred [safe,phone]; [[TN,FP],[FN,TP]]",VERIFIED,experiment_18/src/metrics.py

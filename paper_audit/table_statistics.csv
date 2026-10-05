@@ -1,0 +1,27 @@
+﻿comparison,metric,method,n_clusters,n_boot,observed_diff,ci95_low,ci95_high,bootstrap_p_two_sided,status,exact_p_two_sided,a_correct_b_wrong,a_wrong_b_correct,p_value_reporting
+average_vs_front,macro_f1,subject_cluster_bootstrap_test_subjects,7.0,10000.0,0.04487,-0.03467,0.14186,0.3412,VERIFIED_LIMITED_SMALL_TEST_CLUSTER_N,,,,CI primary; p secondary
+average_vs_side,macro_f1,subject_cluster_bootstrap_test_subjects,7.0,10000.0,0.13645,0.09749,0.19156,< 9.999e-05,VERIFIED_LIMITED_SMALL_TEST_CLUSTER_N,,,,finite-resample bound because zero exceedances; CI primary
+adaptive_vs_front,macro_f1,subject_cluster_bootstrap_test_subjects,7.0,10000.0,0.04487,-0.03438,0.13757,0.3248,VERIFIED_LIMITED_SMALL_TEST_CLUSTER_N,,,,CI primary; p secondary
+adaptive_vs_side,macro_f1,subject_cluster_bootstrap_test_subjects,7.0,10000.0,0.13645,0.09838,0.19156,< 9.999e-05,VERIFIED_LIMITED_SMALL_TEST_CLUSTER_N,,,,finite-resample bound because zero exceedances; CI primary
+average_vs_adaptive,macro_f1,subject_cluster_bootstrap_test_subjects,7.0,10000.0,0.0,0.0,0.0,1.0,VERIFIED_LIMITED_SMALL_TEST_CLUSTER_N,,,,CI primary; p secondary
+front_vs_side,macro_f1,subject_cluster_bootstrap_test_subjects,7.0,10000.0,0.09158,0.00451,0.15978,0.042,VERIFIED_LIMITED_SMALL_TEST_CLUSTER_N,,,,CI primary; p secondary
+average_vs_front,macro_f1,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.0448469037058606,-0.020154825706564,0.1108128754300058,0.1764,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+average_vs_side,macro_f1,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.1368899867992654,0.082694679351656,0.1971412485731541,< 9.999e-05,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,finite-resample bound because zero exceedances; CI primary
+adaptive_vs_front,macro_f1,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.0448469037058606,-0.020154825706564,0.1108128754300058,0.1764,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+adaptive_vs_side,macro_f1,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.1368899867992654,0.082694679351656,0.1971412485731541,< 9.999e-05,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,finite-resample bound because zero exceedances; CI primary
+average_vs_adaptive,macro_f1,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.0,0.0,0.0,1.0,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+average_vs_front,roc_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,-0.0172145626749004,-0.0543846899224804,0.0180412371134019,0.3546,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+average_vs_side,roc_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.1086366889968165,0.0582706766917293,0.1643243243243244,< 9.999e-05,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,finite-resample bound because zero exceedances; CI primary
+adaptive_vs_front,roc_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,-0.0150979011902981,-0.0537439613526571,0.021111111111111,0.4284,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+adaptive_vs_side,roc_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.1107533504814188,0.062343828085957,0.1637065637065636,< 9.999e-05,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,finite-resample bound because zero exceedances; CI primary
+average_vs_adaptive,roc_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,-0.0021166614846023,-0.0093295382669197,0.0044444444444445,0.5334,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+average_vs_front,pr_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,-0.00826328740348,-0.0209747253946686,0.0022719409120719,0.137,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+average_vs_side,pr_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.0369111276549571,0.0160555508398944,0.0631447008657921,< 9.999e-05,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,finite-resample bound because zero exceedances; CI primary
+adaptive_vs_front,pr_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,-0.0073382503252177,-0.0200009104526954,0.0031840268358209,0.1908,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+adaptive_vs_side,pr_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,0.0378361647332194,0.0173042227945344,0.0632296858303346,< 9.999e-05,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,finite-resample bound because zero exceedances; CI primary
+average_vs_adaptive,pr_auc,existing_frame_level_bootstrap_or_mcnemar,,10000.0,-0.0009250370782622,-0.0032876099991895,0.0010537032728417,0.3696,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,,,,CI primary; p secondary
+average_vs_front,mcnemar_accuracy,existing_frame_level_bootstrap_or_mcnemar,,,,,,,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,0.1670684814453125,13.0,6.0,CI primary; p secondary
+average_vs_side,mcnemar_accuracy,existing_frame_level_bootstrap_or_mcnemar,,,,,,,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,1.9073486328125e-06,20.0,0.0,CI primary; p secondary
+adaptive_vs_front,mcnemar_accuracy,existing_frame_level_bootstrap_or_mcnemar,,,,,,,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,0.1670684814453125,13.0,6.0,CI primary; p secondary
+adaptive_vs_side,mcnemar_accuracy,existing_frame_level_bootstrap_or_mcnemar,,,,,,,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,1.9073486328125e-06,20.0,0.0,CI primary; p secondary
+average_vs_adaptive,mcnemar_accuracy,existing_frame_level_bootstrap_or_mcnemar,,,,,,,SUPPLEMENTARY_FRAME_LEVEL_DEPENDENCE_CAVEAT,1.0,0.0,0.0,CI primary; p secondary

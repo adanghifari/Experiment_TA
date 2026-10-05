@@ -1,0 +1,19 @@
+{
+  "environment": {
+    "timestamp": "2026-09-18T17:32:09",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytorch_version": "2.11.0+cu128",
+    "timm_version": "1.0.27",
+    "cuda_available": true,
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "git_commit": "54b5ec14ee7738d36df3eafd22f5f079c8e75a7f",
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false
+  },
+  "resolved_config_path": "D:\\Skripsi\\Experiment_TA\\experiment_18_standardized_checkpoint_val_loss\\config\\resolved_config.json",
+  "front_checkpoint_sha256": "16d0f46c6e75a295c5ca18f3a2d8258420ce99f1ee359d5392e58e63efd2181b",
+  "side_checkpoint_sha256": "a3494d74bdfac0ca2de936b5b1dfb7197312fc0bd4891b56166235f34421f7a9",
+  "run_type": "controlled_variant"
+}

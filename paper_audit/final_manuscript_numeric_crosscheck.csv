@@ -1,0 +1,85 @@
+section,manuscript_value,meaning,source_artifact,artifact_value,match,status,severity,notes
+Introduction,"3MDAD daytime RGB",dataset scope,"experiment_18/src/config.py; paper_audit/paper_facts.md","3MDAD daytime RGB",YES,VERIFIED,NONE
+Introduction,"RGB1=Side; RGB2=Front",view mapping,"experiment_18/src/config.py:46-51","RGB1=Side; RGB2=Front",YES,VERIFIED,NONE
+Introduction,"A1; A5-A9",retained activities,"experiment_18/src/config.py:56-81","A1; A5-A9",YES,VERIFIED,NONE
+Introduction,41595,pre-stride synchronized pairs,"paper_audit/table_split.csv",41595,YES,VERIFIED,NONE
+Introduction,6761,pre-stride safe-driving pairs,"paper_audit/table_dataset.csv",6761,YES,VERIFIED,NONE
+Introduction,34834,pre-stride phone-use pairs,"paper_audit/table_dataset.csv",34834,YES,VERIFIED,NONE
+Methodology,0,safe label index,"experiment_18/src/config.py:99-101",0,YES,VERIFIED,NONE
+Methodology,1,phone-use label index,"experiment_18/src/config.py:99-101",1,YES,VERIFIED,NONE
+Methodology,224x224,image size,"experiment_18/src/config.py:125",224x224,YES,VERIFIED,NONE
+Methodology,"[0.485,0.456,0.406]",ImageNet mean,"experiment_18/src/config.py:126","[0.485,0.456,0.406]",YES,VERIFIED,NONE
+Methodology,"[0.229,0.224,0.225]",ImageNet standard deviation,"experiment_18/src/config.py:127","[0.229,0.224,0.225]",YES,VERIFIED,NONE
+Methodology,30,frame stride,"experiment_18/src/config.py:171; dataset.py:30",30,YES,VERIFIED,NONE
+Methodology,"(frame-1) mod 30 = 0",sampling condition,"experiment_18/src/dataset.py:30","(frame-1) mod 30 = 0",YES,VERIFIED,NONE
+Methodology,68,Front rotation degrees,"experiment_18/src/config.py:156",68,YES,VERIFIED,NONE
+Methodology,45,Side rotation degrees,"experiment_18/src/config.py:160",45,YES,VERIFIED,NONE
+Methodology,1.2,Front ColorJitter brightness/contrast/saturation,"experiment_18/src/config.py:157",1.2,YES,VERIFIED,NONE
+Methodology,0.8,Side ColorJitter brightness/contrast/saturation,"experiment_18/src/config.py:161",0.8,YES,VERIFIED,NONE
+Methodology,0,ColorJitter default hue,"experiment_18/src/dataset.py:23",0,YES,VERIFIED,Hue omitted so torchvision default applies
+Methodology,42,split seed,"experiment_18/src/config.py:119",42,YES,VERIFIED,NONE
+Methodology,"70/15/15",nominal subject split ratios,"experiment_18/src/config.py:120","0.70/0.15/0.15",YES,VERIFIED,Nominal ratios
+Methodology,"35/8/7",train/validation/test subjects,"paper_audit/table_split.csv","35/8/7",YES,VERIFIED,NONE
+Table I,"176/908/1084",train safe/phone/total,"paper_audit/table_split.csv","176/908/1084",YES,VERIFIED,NONE
+Table I,"34/191/225",validation safe/phone/total,"paper_audit/table_split.csv","34/191/225",YES,VERIFIED,NONE
+Table I,"40/180/220",test safe/phone/total,"paper_audit/table_split.csv","40/180/220",YES,VERIFIED,NONE
+Methodology,"tf_efficientnetv2_s",timm model identifier,"experiment_18/src/config.py:129","tf_efficientnetv2_s",YES,VERIFIED,NONE
+Methodology,True,ImageNet pretrained initialization,"experiment_18/src/config.py:130",True,YES,VERIFIED,NONE
+Methodology,2,output logits,"experiment_18/src/model.py:72-74",2,YES,VERIFIED,NONE
+Methodology,0.4,dropout,"experiment_18/src/config.py:135-136",0.4,YES,VERIFIED,Shared value
+Methodology,32,batch size,"experiment_18/src/config.py:132",32,YES,VERIFIED,NONE
+Methodology,30,maximum epochs,"experiment_18/src/config.py:139",30,YES,VERIFIED,NONE
+Methodology,0.0,label smoothing,"experiment_18/src/config.py:148",0.0,YES,VERIFIED,NONE
+Methodology,"[2.5,1.0]",class weights in [safe,phone] order,"experiment_18/config/resolved_config.json; best_checkpoint_metadata.json","[2.5,1.0]",YES,VERIFIED,Exact numeric origin not established
+Table II,3e-5,Front learning rate,"experiment_18/config/resolved_config.json",3e-5,YES,VERIFIED,NONE
+Table II,2e-5,Side learning rate,"experiment_18/config/resolved_config.json",2e-5,YES,VERIFIED,NONE
+Table II,5e-4,Front weight decay,"experiment_18/config/resolved_config.json",5e-4,YES,VERIFIED,NONE
+Table II,1e-3,Side weight decay,"experiment_18/config/resolved_config.json",1e-3,YES,VERIFIED,NONE
+Table II,5,Front freeze-stage,"experiment_18/config/resolved_config.json",5,YES,VERIFIED,NONE
+Table II,4,Side freeze-stage,"experiment_18/config/resolved_config.json",4,YES,VERIFIED,NONE
+Table II,"val_macro_f1/max",Front checkpoint criterion,"experiment_18/results/front/train_summary.json","val_macro_f1/max",YES,VERIFIED,NONE
+Table II,"val_loss/min",Side checkpoint criterion,"experiment_18/results/side/train_summary.json","val_loss/min",YES,VERIFIED,NONE
+Methodology,4,Front early-stopping patience,"experiment_18/src/config.py:137",4,YES,VERIFIED,NONE
+Methodology,5,Side early-stopping patience,"experiment_18/src/config.py:138",5,YES,VERIFIED,NONE
+Methodology,1,Front scheduler patience,"experiment_18/src/config.py:151",1,YES,VERIFIED,NONE
+Methodology,2,Side scheduler patience,"experiment_18/src/config.py:152",2,YES,VERIFIED,Resolved_config.json has a conflicting side value of 1; paper does not report scheduler patience
+Methodology,0.5,decision threshold,"experiment_18/src/config.py:140",0.5,YES,VERIFIED,NONE
+Results/Table III,0.76626,Front Macro F1,"experiment_18/results/front/test_eval_metrics.json",0.76626,YES,VERIFIED,NONE
+Results/Table III,0.67468,Side Macro F1,"experiment_18/results/side/test_eval_metrics.json",0.67468,YES,VERIFIED,NONE
+Results/Table III,0.81113,Average Fusion Macro F1,"experiment_18/results/fusion/average_fusion_metrics.json",0.81113,YES,VERIFIED,NONE
+Results/Table III,0.81113,Adaptive Fusion Macro F1,"experiment_18/results/fusion/adaptive_fusion_metrics.json",0.81113,YES,VERIFIED,NONE
+Results/Table III,0.86364,Front accuracy,"experiment_18/results/front/test_eval_metrics.json",0.86364,YES,VERIFIED,NONE
+Results/Table III,0.80455,Side accuracy,"experiment_18/results/side/test_eval_metrics.json",0.80455,YES,VERIFIED,NONE
+Results/Table III,0.89545,Average/Adaptive accuracy,"experiment_18/results/fusion/average_fusion_metrics.json; adaptive_fusion_metrics.json",0.89545,YES,VERIFIED,NONE
+Results/Table III,"[[24,16],[14,166]]",Front confusion matrix,"experiment_18/results/front/test_eval_metrics.json","[[24,16],[14,166]]",YES,VERIFIED,Rows true; columns predicted
+Results/Table III,"[[19,21],[22,158]]",Side confusion matrix,"experiment_18/results/side/test_eval_metrics.json","[[19,21],[22,158]]",YES,VERIFIED,Rows true; columns predicted
+Results/Table III,"[[25,15],[8,172]]",Average/Adaptive confusion matrix,"experiment_18/results/fusion/average_fusion_metrics.json; adaptive_fusion_metrics.json","[[25,15],[8,172]]",YES,VERIFIED,Rows true; columns predicted
+Results/RQ1,"164/26/13/17",both correct/front only/side only/both wrong,"experiment_18/results/fusion/complementarity_analysis.json","164/26/13/17",YES,VERIFIED,N=220
+Results/RQ1,13,fusion fixed Front errors,"experiment_18/results/fusion/complementarity_analysis.json",13,YES,VERIFIED,N=220
+Results/RQ1,6,fusion broke Front-correct cases,"experiment_18/results/fusion/complementarity_analysis.json",6,YES,VERIFIED,N=220
+Results/Fig. 3,"0.390/0.716",panel a probabilities,"results/final_exp18_complementarity_per_sample.csv","0.390375/0.715623",YES,VERIFIED,Displayed to three decimals
+Results/Fig. 3,"0.956/0.493",panel b probabilities,"results/final_exp18_complementarity_per_sample.csv","0.955601/0.493268",YES,VERIFIED,Displayed to three decimals
+Results/Fig. 3,"0.822/0.718",panel c probabilities,"results/final_exp18_complementarity_per_sample.csv","0.822374/0.718420",YES,VERIFIED,Displayed to three decimals
+Results/RQ3,220/220,adaptive scores changed,"paper_audit/adaptive_analysis.csv","220/220",YES,VERIFIED,NONE
+Results/RQ3,0/220,adaptive decisions changed,"paper_audit/adaptive_analysis.csv","0/220",YES,VERIFIED,NONE
+Results/RQ3,0.51260,mean Front adaptive weight,"paper_audit/adaptive_analysis.csv",0.51260,YES,VERIFIED,NONE
+Results/RQ3,0.03914,population std Front weight,"paper_audit/adaptive_analysis.csv",0.03914,YES,VERIFIED,ddof=0
+Results/RQ3,173/220,Front weight in [0.45,0.55],"paper_audit/adaptive_analysis.csv","173/220",YES,VERIFIED,NONE
+Results/RQ3,219/220,Front weight in [0.40,0.60],"paper_audit/adaptive_analysis.csv","219/220",YES,VERIFIED,NONE
+Results/RQ3,0.00757,mean absolute adaptive shift,"paper_audit/adaptive_analysis.csv",0.00757,YES,VERIFIED,NONE
+Results/RQ3,0.05103,max absolute adaptive shift,"paper_audit/adaptive_analysis.csv",0.05103,YES,VERIFIED,NONE
+Results/RQ3,"0.86292/0.96236/0.17916/0.12341",Average ROC-AUC/PR-AUC/ECE/Brier,"experiment_18/results/fusion/average_fusion_metrics.json","0.86292/0.96236/0.17916/0.12341",YES,VERIFIED,NONE
+Results/RQ3,"0.86500/0.96329/0.17159/0.12028",Adaptive ROC-AUC/PR-AUC/ECE/Brier,"experiment_18/results/fusion/adaptive_fusion_metrics.json","0.86500/0.96329/0.17159/0.12028",YES,VERIFIED,NONE
+Results/Sensitivity,"4 settings",number of sensitivity settings,"paper_audit/table_ablation.csv",4,YES,VERIFIED,Front fixed
+Results/Sensitivity,"0.67468--0.76019",Side Macro F1 range,"paper_audit/table_ablation.csv","0.67468--0.76019",YES,VERIFIED,NONE
+Results/Sensitivity,"0.77327--0.81113",Fusion Macro F1 range,"paper_audit/table_ablation.csv","0.77327--0.81113",YES,VERIFIED,NONE
+Results/Robustness,"42/43/44",training seeds,"paper_audit/table_robustness.csv","42/43/44",YES,VERIFIED,NONE
+Results/Robustness,"0.74872 +/- 0.02468",Front mean/sample std,"paper_audit/table_robustness.csv","0.74872 +/- 0.02468",YES,VERIFIED,ddof=1
+Results/Robustness,"0.68011 +/- 0.01987",Side mean/sample std,"paper_audit/table_robustness.csv","0.68011 +/- 0.01987",YES,VERIFIED,ddof=1
+Results/Robustness,"0.77256 +/- 0.03584",Fusion mean/sample std,"paper_audit/table_robustness.csv","0.77256 +/- 0.03584",YES,VERIFIED,ddof=1
+Methodology/Bootstrap,7,test subject clusters,"paper_audit/model_selection_protocol_deep_audit_data.json",7,YES,VERIFIED,NONE
+Methodology/Bootstrap,10000,bootstrap repetitions,"paper_audit/model_selection_protocol_deep_audit_data.json",10000,YES,VERIFIED,NONE
+Methodology/Bootstrap,95%,confidence level,"paper_audit/model_selection_protocol_deep_audit_data.json",95%,YES,VERIFIED,NONE
+Results/Bootstrap,"[-0.03467,0.14186]",Average minus Front 95% CI,"paper_audit/table_statistics.csv; within_protocol_bootstrap.csv","table_statistics: [-0.03467,0.14186]; deep audit: [-0.03270,0.13884]",CONFLICTING,UNCERTAIN,Resolve canonical bootstrap artifact
+Results/Bootstrap,"[0.09749,0.19156]",Average minus Side 95% CI,"paper_audit/table_statistics.csv; within_protocol_bootstrap.csv","table_statistics: [0.09749,0.19156]; deep audit: [0.09801,0.19127]",CONFLICTING,UNCERTAIN,Resolve canonical bootstrap artifact
+Methodology/Reproducibility,true,cuDNN deterministic claim,"experiment_18/src/train.py:17-18; per-view metadata",true,YES,QUALIFIED,run_metadata.json records false

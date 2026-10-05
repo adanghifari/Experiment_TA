@@ -1,0 +1,19 @@
+{
+  "environment": {
+    "timestamp": "2026-09-18T15:43:02",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytorch_version": "2.11.0+cu128",
+    "timm_version": "1.0.27",
+    "cuda_available": true,
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "git_commit": "54b5ec14ee7738d36df3eafd22f5f079c8e75a7f",
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false
+  },
+  "resolved_config_path": "D:\\Skripsi\\Experiment_TA\\experiment_18_standardized_checkpoint_selection\\config\\resolved_config.json",
+  "front_checkpoint_sha256": "5dc3aec44d17dd23cb9296d9a95d09564ccbd60528ccef85d3dacbb7ecbcc2f6",
+  "side_checkpoint_sha256": "0264b6c81744c65aee5dfdb18fe6943bda2b5fc04f727b63acb42334b0f52712",
+  "run_type": "experiment_run"
+}

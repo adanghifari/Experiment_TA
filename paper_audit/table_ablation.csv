@@ -1,0 +1,5 @@
+﻿experiment,controlled_change_vs_exp18,side_test_macro_f1,avg_fusion_macro_f1,adaptive_fusion_macro_f1,fusion_safe_recall,fusion_phone_recall,status,notes
+experiment_18,baseline,0.67468,0.81113,0.81113,0.625,0.95556,VERIFIED_FROM_FINAL_MASTER,"descriptive, not causal"
+experiment_20,Side rotation: 45.0 -> 20.0; Side color_jitter: 0.8 -> 0.4,0.76019,0.77327,0.77327,0.55,0.95,VERIFIED_FROM_FINAL_MASTER,"descriptive, not causal"
+experiment_21,Side rotation: 45.0 -> 30.0; Side color_jitter: 0.8 -> 0.6,0.75067,0.79614,0.79614,0.575,0.96111,VERIFIED_FROM_FINAL_MASTER,"descriptive, not causal"
+experiment_22,Side rotation: 45.0 -> 35.0; Side color_jitter: 0.8 -> 0.7,0.69915,0.80686,0.80686,0.6,0.96111,VERIFIED_FROM_FINAL_MASTER,"descriptive, not causal"

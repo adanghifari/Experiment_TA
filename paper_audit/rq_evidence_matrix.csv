@@ -1,0 +1,5 @@
+﻿rq,evidence,support_status,source,caveat
+RQ1 Front vs Side,Front Macro F1 0.76626 vs Side 0.67468; Side gap +0.10775,SUPPORTED_DESCRIPTIVE,main/training/per-class tables,No visual-cause claim without review.
+RQ2 Fusion vs best single-view,Fusion Macro F1 0.81113 vs Front 0.76626; cluster CI crosses zero vs Front but not vs Side,SUPPORTED_WITH_STATISTICAL_CAVEAT,main/statistics tables,Point-estimate improvement vs Front.
+RQ3 Average vs Adaptive,Identical hard predictions and Macro F1; probabilities differ,SUPPORTED,adaptive/main tables,Adaptive did not change decisions.
+Complementarity,Front-only correct=26; Side-only correct=13; both wrong=17,SUPPORTED_DESCRIPTIVE,table_complementarity.csv,Quantitative only.

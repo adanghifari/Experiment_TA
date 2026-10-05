@@ -1,0 +1,4 @@
+﻿subset,n,both_correct,both_wrong,front_only_correct,side_only_correct,average_fixed_front_error,average_broke_front_correct,adaptive_fixed_front_error,adaptive_broke_front_correct,both_correct_pct,both_wrong_pct,front_only_correct_pct,side_only_correct_pct,average_fixed_front_error_pct,average_broke_front_correct_pct,adaptive_fixed_front_error_pct,adaptive_broke_front_correct_pct,status
+all,220,164,17,26,13,13,6,13,6,0.74545,0.07727,0.11818,0.05909,0.05909,0.02727,0.05909,0.02727,VERIFIED
+safe_driving,40,15,12,9,4,4,3,4,3,0.375,0.3,0.225,0.1,0.1,0.075,0.1,0.075,VERIFIED
+phone_use,180,149,5,17,9,9,3,9,3,0.82778,0.02778,0.09444,0.05,0.05,0.01667,0.05,0.01667,VERIFIED

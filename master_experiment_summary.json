@@ -2,7 +2,7 @@
   {
     "Experiment": "experiment_1",
     "Run Type": "experiment_run",
-    "Stride": 1,
+    "Stride": 15,
     "Seed Training": true,
     "Front Train Eval F1": 0.98852,
     "Front Val Eval F1": 0.88682,
@@ -25,7 +25,7 @@
   {
     "Experiment": "experiment_2",
     "Run Type": "experiment_run",
-    "Stride": 1,
+    "Stride": 15,
     "Seed Training": true,
     "Front Train Eval F1": 1.0,
     "Front Val Eval F1": 0.88748,
@@ -48,7 +48,7 @@
   {
     "Experiment": "experiment_3",
     "Run Type": "experiment_run",
-    "Stride": 1,
+    "Stride": 15,
     "Seed Training": true,
     "Front Train Eval F1": 0.99643,
     "Front Val Eval F1": 0.84723,
@@ -71,7 +71,7 @@
   {
     "Experiment": "experiment_4",
     "Run Type": "experiment_run",
-    "Stride": 5,
+    "Stride": 15,
     "Seed Training": true,
     "Front Train Eval F1": 0.97133,
     "Front Val Eval F1": 0.80977,
@@ -94,7 +94,7 @@
   {
     "Experiment": "experiment_5",
     "Run Type": "experiment_run",
-    "Stride": 5,
+    "Stride": 15,
     "Seed Training": true,
     "Front Train Eval F1": 0.82968,
     "Front Val Eval F1": 0.77469,
@@ -117,7 +117,7 @@
   {
     "Experiment": "experiment_6",
     "Run Type": "experiment_run",
-    "Stride": 5,
+    "Stride": 15,
     "Seed Training": true,
     "Front Train Eval F1": 0.61501,
     "Front Val Eval F1": 0.63648,
@@ -140,7 +140,7 @@
   {
     "Experiment": "experiment_7",
     "Run Type": "experiment_run",
-    "Stride": 5,
+    "Stride": 15,
     "Seed Training": true,
     "Front Train Eval F1": 0.57203,
     "Front Val Eval F1": 0.59678,
@@ -503,6 +503,29 @@
     "Phone Recall": 0.96111,
     "Checkpoint Criterion Front": "val_macro_f1",
     "Checkpoint Criterion Side": "val_loss",
+    "Notes": null
+  },
+  {
+    "Experiment": "experiment_23",
+    "Run Type": "experiment_run",
+    "Stride": 30,
+    "Seed Training": true,
+    "Front Train Eval F1": null,
+    "Front Val Eval F1": null,
+    "Front F1 Gap": null,
+    "Front Test Macro F1": null,
+    "Front Best Epoch": null,
+    "Side Train Eval F1": null,
+    "Side Val Eval F1": null,
+    "Side F1 Gap": null,
+    "Side Test Macro F1": null,
+    "Side Best Epoch": null,
+    "Average Fusion Macro F1": null,
+    "Adaptive Fusion Macro F1": null,
+    "Safe Recall": null,
+    "Phone Recall": null,
+    "Checkpoint Criterion Front": null,
+    "Checkpoint Criterion Side": null,
     "Notes": null
   }
 ]

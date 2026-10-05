@@ -140,7 +140,7 @@
     "Fusion Broke Front Correct": 4,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.82245 vs artifact=0.83759; conflict experiment_index side_macro_f1=0.83697 vs artifact=0.61415; conflict experiment_index average_fusion_macro_f1=0.84097 vs artifact=0.81773; conflict experiment_index adaptive_fusion_macro_f1=0.84097 vs artifact=0.81773"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_2",
@@ -283,7 +283,7 @@
     "Fusion Broke Front Correct": 6,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.80925 vs artifact=0.78267; conflict experiment_index side_macro_f1=0.76181 vs artifact=0.78792; conflict experiment_index average_fusion_macro_f1=0.79197 vs artifact=0.83402; conflict experiment_index adaptive_fusion_macro_f1=0.79197 vs artifact=0.83402"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_3",
@@ -426,13 +426,13 @@
     "Fusion Broke Front Correct": 2,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.82124 vs artifact=0.75341; conflict experiment_index side_macro_f1=0.83443 vs artifact=0.81679; conflict experiment_index average_fusion_macro_f1=0.83915 vs artifact=0.82372; conflict experiment_index adaptive_fusion_macro_f1=0.83915 vs artifact=0.82372"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_4",
     "Historical Source Mapping": "Exp 4",
     "Source Commit": "c7f4459a",
-    "Scenario": "Regularisasi dan stride 5",
+    "Scenario": "Regularisasi baseline stride 15",
     "Run Type": "experiment_run",
     "Seed": 42,
     "Stride": 15,
@@ -569,7 +569,7 @@
     "Fusion Broke Front Correct": 9,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.88252 vs artifact=0.82133; conflict experiment_index side_macro_f1=0.80318 vs artifact=0.8121; conflict experiment_index average_fusion_macro_f1=0.84434 vs artifact=0.85253; conflict experiment_index adaptive_fusion_macro_f1=0.84434 vs artifact=0.85253"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_5",
@@ -712,7 +712,7 @@
     "Fusion Broke Front Correct": 11,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.8375 vs artifact=0.78785; conflict experiment_index side_macro_f1=0.73806 vs artifact=0.54586; conflict experiment_index average_fusion_macro_f1=0.79897 vs artifact=0.79023; conflict experiment_index adaptive_fusion_macro_f1=0.79897 vs artifact=0.79023"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_6",
@@ -855,7 +855,7 @@
     "Fusion Broke Front Correct": 26,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.82925 vs artifact=0.55558; conflict experiment_index side_macro_f1=0.73263 vs artifact=0.57932; conflict experiment_index average_fusion_macro_f1=0.82873 vs artifact=0.60963; conflict experiment_index adaptive_fusion_macro_f1=0.82873 vs artifact=0.60963"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_7",
@@ -998,7 +998,7 @@
     "Fusion Broke Front Correct": 37,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.8074 vs artifact=0.55968; conflict experiment_index side_macro_f1=0.73011 vs artifact=0.51949; conflict experiment_index average_fusion_macro_f1=0.83282 vs artifact=0.59192; conflict experiment_index adaptive_fusion_macro_f1=0.83282 vs artifact=0.59192"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_8",
@@ -1141,7 +1141,7 @@
     "Fusion Broke Front Correct": 14,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.86314 vs artifact=0.85931; conflict experiment_index side_macro_f1=0.77124 vs artifact=0.78012; conflict experiment_index average_fusion_macro_f1=0.87494 vs artifact=0.87074; conflict experiment_index adaptive_fusion_macro_f1=0.87494 vs artifact=0.87074"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_9",
@@ -1284,7 +1284,7 @@
     "Fusion Broke Front Correct": 5,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.78495 vs artifact=0.8213; conflict experiment_index side_macro_f1=0.75077 vs artifact=0.57174; conflict experiment_index average_fusion_macro_f1=0.80444 vs artifact=0.7861; conflict experiment_index adaptive_fusion_macro_f1=0.80444 vs artifact=0.7861"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_10",
@@ -1713,7 +1713,7 @@
     "Fusion Broke Front Correct": 5,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index front_macro_f1=0.7206 vs artifact=0.73985; conflict experiment_index average_fusion_macro_f1=0.7773 vs artifact=0.76142"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_13",
@@ -2142,7 +2142,7 @@
     "Fusion Broke Front Correct": 7,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index average_fusion_macro_f1=0.7799 vs artifact=0.77992"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_16",
@@ -2285,7 +2285,7 @@
     "Fusion Broke Front Correct": 11,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index side_macro_f1=0.66044 vs artifact=0.75905; conflict experiment_index average_fusion_macro_f1=0.7588 vs artifact=0.78589; conflict experiment_index adaptive_fusion_macro_f1=0.7588 vs artifact=0.78589"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_17",
@@ -2428,7 +2428,7 @@
     "Fusion Broke Front Correct": 11,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index side_macro_f1=0.76085 vs artifact=0.75905; conflict experiment_index average_fusion_macro_f1=0.81626 vs artifact=0.78589; conflict experiment_index adaptive_fusion_macro_f1=0.81626 vs artifact=0.78589"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_18",
@@ -2571,7 +2571,7 @@
     "Fusion Broke Front Correct": 6,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index side_macro_f1=0.73985 vs artifact=0.67468"
+    "Notes": ""
   },
   {
     "Experiment": "experiment_19",
@@ -2714,6 +2714,6 @@
     "Fusion Broke Front Correct": 8,
     "Statistical Tests Available": "No artifact found",
     "Statistical Tests Summary": "NA",
-    "Notes": "conflict experiment_index side_macro_f1=0.7159 vs artifact=0.68372; conflict experiment_index average_fusion_macro_f1=0.82504 vs artifact=0.79471; conflict experiment_index adaptive_fusion_macro_f1=0.82504 vs artifact=0.79471"
+    "Notes": ""
   }
 ]

@@ -1,0 +1,4 @@
+strict_json_validation = PASS
+self_consistency_result = PASS
+checks: post_stride_counts, main_metrics, adaptive_statistics, split_subjects, confusion_matrices, robustness_macro_f1
+PASS: all canonical numeric checks agree across target audit artifacts.

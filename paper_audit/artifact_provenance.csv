@@ -1,0 +1,27 @@
+﻿artifact,exists,bytes,role
+README.md,True,1184,audit source
+data/manifest_full.csv,True,23009895,audit source
+data/manifest_binary.csv,True,9496943,audit source
+data/manifest_paired.csv,True,6540951,audit source
+data/manifest_split.csv,True,9959491,audit source
+experiment_18/src/config.py,True,7051,audit source
+experiment_18/src/dataset.py,True,2954,audit source
+experiment_18/src/train.py,True,13366,audit source
+experiment_18/src/evaluate.py,True,4673,audit source
+experiment_18/src/fusion.py,True,6776,audit source
+experiment_18/src/metrics.py,True,3774,audit source
+experiment_18/config/resolved_config.json,True,1249,audit source
+experiment_18/results/front/train_summary.json,True,2835,audit source
+experiment_18/results/side/train_summary.json,True,2818,audit source
+experiment_18/results/front/test_eval_metrics.json,True,2954,audit source
+experiment_18/results/side/test_eval_metrics.json,True,2944,audit source
+experiment_18/results/fusion/average_fusion_metrics.json,True,1315,audit source
+experiment_18/results/fusion/adaptive_fusion_metrics.json,True,1327,audit source
+experiment_18/results/fusion/complementarity_analysis.json,True,558,audit source
+experiment_18/results/predictions/fusion_test_predictions.csv,True,51892,audit source
+results/final_master_experiments_1_22.csv,True,16622,audit source
+results/final_exp18_statistical_tests.csv,True,2076,audit source
+results/final_exp18_failure_cases.csv,True,6517,audit source
+experiment_23/results/robustness_aggregate.csv,True,2875,audit source
+experiment_23/results/robustness_full_results.csv,True,2204,audit source
+experiment_23/results/adaptive_weights_by_seed.csv,True,832,audit source

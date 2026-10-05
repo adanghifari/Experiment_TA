@@ -1,0 +1,9 @@
+﻿model,class,precision,recall,f1,support
+Front,safe_driving,0.63158,0.6,0.61538,40.0
+Front,phone_use,0.91209,0.92222,0.91713,180.0
+Side,safe_driving,0.46341,0.475,0.46914,40.0
+Side,phone_use,0.88268,0.87778,0.88022,180.0
+Average Fusion,safe_driving,0.75758,0.625,0.68493,40.0
+Average Fusion,phone_use,0.91979,0.95556,0.93733,180.0
+Adaptive Fusion,safe_driving,0.75758,0.625,0.68493,40.0
+Adaptive Fusion,phone_use,0.91979,0.95556,0.93733,180.0

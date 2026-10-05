@@ -1,0 +1,7 @@
+﻿item,severity,status,needed_action
+Separate visual evidence file for RGB1/S31 AC9-AC10 correction,NON_BLOCKING_FOR_METRICS_BUT_WORDING_CARE,NOT_FOUND_IN_REPO,Do not overclaim visual proof.
+Interpolation mode in Resize,MINOR_METHOD_DETAIL,NOT_EXPLICIT_IN_REPO,Do not name interpolation unless verified.
+DataLoader generator / worker_init_fn / torch.use_deterministic_algorithms,REPRODUCIBILITY_WORDING,NOT_FOUND_IN_EXP18,Do not claim bitwise determinism.
+Qualitative visual failure causes,WORDING_RISK,NEEDS_MANUAL_VISUAL_REVIEW,Use qualitative candidates only.
+DeLong ROC-AUC test,OPTIONAL,NOT_RUN,Only needed for inferential ROC-AUC claims.
+Exp20-22 test-informed exploration,METHODOLOGY_TRANSPARENCY,VERIFIED_CAVEAT,Frame as exploratory controlled follow-up.

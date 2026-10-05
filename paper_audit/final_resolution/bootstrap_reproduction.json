@@ -1,0 +1,353 @@
+{
+  "prediction_path": "D:\\Skripsi\\Experiment_TA\\experiment_18\\results\\predictions\\fusion_test_predictions.csv",
+  "prediction_sha256": "07fcb5e5cb04c30f5af2d8d26573d3047b72294ec26e1827a89810d1d589ce26",
+  "rows": 220,
+  "unique_samples": 220,
+  "subjects_in_file_order": [
+    10,
+    11,
+    17,
+    21,
+    4,
+    42,
+    8
+  ],
+  "subject_row_counts": {
+    "10": 30,
+    "11": 27,
+    "17": 35,
+    "21": 33,
+    "4": 32,
+    "42": 25,
+    "8": 38
+  },
+  "repetitions": 10000,
+  "seed": 42,
+  "numpy_version": "2.3.5",
+  "results": [
+    {
+      "order": "first_appearance",
+      "rng": "default_rng",
+      "draw": "integers",
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.032702300061770995,
+      "ci95_high": 0.13884389171745493,
+      "n_clusters": 7,
+      "subjects": [
+        10,
+        11,
+        17,
+        21,
+        4,
+        42,
+        8
+      ],
+      "comparison": "average_vs_front"
+    },
+    {
+      "order": "first_appearance",
+      "rng": "default_rng",
+      "draw": "integers",
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09800745235314207,
+      "ci95_high": 0.19126612106447805,
+      "n_clusters": 7,
+      "subjects": [
+        10,
+        11,
+        17,
+        21,
+        4,
+        42,
+        8
+      ],
+      "comparison": "average_vs_side"
+    },
+    {
+      "order": "first_appearance",
+      "rng": "default_rng",
+      "draw": "choice",
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.032702300061770995,
+      "ci95_high": 0.13884389171745493,
+      "n_clusters": 7,
+      "subjects": [
+        10,
+        11,
+        17,
+        21,
+        4,
+        42,
+        8
+      ],
+      "comparison": "average_vs_front"
+    },
+    {
+      "order": "first_appearance",
+      "rng": "default_rng",
+      "draw": "choice",
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09800745235314207,
+      "ci95_high": 0.19126612106447805,
+      "n_clusters": 7,
+      "subjects": [
+        10,
+        11,
+        17,
+        21,
+        4,
+        42,
+        8
+      ],
+      "comparison": "average_vs_side"
+    },
+    {
+      "order": "first_appearance",
+      "rng": "RandomState",
+      "draw": "randint",
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.032318496479849614,
+      "ci95_high": 0.13791802489050198,
+      "n_clusters": 7,
+      "subjects": [
+        10,
+        11,
+        17,
+        21,
+        4,
+        42,
+        8
+      ],
+      "comparison": "average_vs_front"
+    },
+    {
+      "order": "first_appearance",
+      "rng": "RandomState",
+      "draw": "randint",
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09841544310965489,
+      "ci95_high": 0.18993775278849317,
+      "n_clusters": 7,
+      "subjects": [
+        10,
+        11,
+        17,
+        21,
+        4,
+        42,
+        8
+      ],
+      "comparison": "average_vs_side"
+    },
+    {
+      "order": "first_appearance",
+      "rng": "RandomState",
+      "draw": "choice",
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.032318496479849614,
+      "ci95_high": 0.13791802489050198,
+      "n_clusters": 7,
+      "subjects": [
+        10,
+        11,
+        17,
+        21,
+        4,
+        42,
+        8
+      ],
+      "comparison": "average_vs_front"
+    },
+    {
+      "order": "first_appearance",
+      "rng": "RandomState",
+      "draw": "choice",
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09841544310965489,
+      "ci95_high": 0.18993775278849317,
+      "n_clusters": 7,
+      "subjects": [
+        10,
+        11,
+        17,
+        21,
+        4,
+        42,
+        8
+      ],
+      "comparison": "average_vs_side"
+    },
+    {
+      "order": "sorted",
+      "rng": "default_rng",
+      "draw": "integers",
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.03437634282589164,
+      "ci95_high": 0.1391291185597251,
+      "n_clusters": 7,
+      "subjects": [
+        4,
+        8,
+        10,
+        11,
+        17,
+        21,
+        42
+      ],
+      "comparison": "average_vs_front"
+    },
+    {
+      "order": "sorted",
+      "rng": "default_rng",
+      "draw": "integers",
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09748808894751781,
+      "ci95_high": 0.189930707894728,
+      "n_clusters": 7,
+      "subjects": [
+        4,
+        8,
+        10,
+        11,
+        17,
+        21,
+        42
+      ],
+      "comparison": "average_vs_side"
+    },
+    {
+      "order": "sorted",
+      "rng": "default_rng",
+      "draw": "choice",
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.03437634282589164,
+      "ci95_high": 0.1391291185597251,
+      "n_clusters": 7,
+      "subjects": [
+        4,
+        8,
+        10,
+        11,
+        17,
+        21,
+        42
+      ],
+      "comparison": "average_vs_front"
+    },
+    {
+      "order": "sorted",
+      "rng": "default_rng",
+      "draw": "choice",
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09748808894751781,
+      "ci95_high": 0.189930707894728,
+      "n_clusters": 7,
+      "subjects": [
+        4,
+        8,
+        10,
+        11,
+        17,
+        21,
+        42
+      ],
+      "comparison": "average_vs_side"
+    },
+    {
+      "order": "sorted",
+      "rng": "RandomState",
+      "draw": "randint",
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.03325046799967368,
+      "ci95_high": 0.1393405961716892,
+      "n_clusters": 7,
+      "subjects": [
+        4,
+        8,
+        10,
+        11,
+        17,
+        21,
+        42
+      ],
+      "comparison": "average_vs_front"
+    },
+    {
+      "order": "sorted",
+      "rng": "RandomState",
+      "draw": "randint",
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09768627623474901,
+      "ci95_high": 0.19021250364533948,
+      "n_clusters": 7,
+      "subjects": [
+        4,
+        8,
+        10,
+        11,
+        17,
+        21,
+        42
+      ],
+      "comparison": "average_vs_side"
+    },
+    {
+      "order": "sorted",
+      "rng": "RandomState",
+      "draw": "choice",
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.03325046799967368,
+      "ci95_high": 0.1393405961716892,
+      "n_clusters": 7,
+      "subjects": [
+        4,
+        8,
+        10,
+        11,
+        17,
+        21,
+        42
+      ],
+      "comparison": "average_vs_front"
+    },
+    {
+      "order": "sorted",
+      "rng": "RandomState",
+      "draw": "choice",
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09768627623474901,
+      "ci95_high": 0.19021250364533948,
+      "n_clusters": 7,
+      "subjects": [
+        4,
+        8,
+        10,
+        11,
+        17,
+        21,
+        42
+      ],
+      "comparison": "average_vs_side"
+    }
+  ],
+  "target_manuscript": {
+    "average_vs_front": [
+      -0.03467,
+      0.14186
+    ],
+    "average_vs_side": [
+      0.09749,
+      0.19156
+    ]
+  },
+  "target_deep_audit": {
+    "average_vs_front": [
+      -0.032702300061770995,
+      0.13884389171745493
+    ],
+    "average_vs_side": [
+      0.09800745235314207,
+      0.19126612106447805
+    ]
+  }
+}

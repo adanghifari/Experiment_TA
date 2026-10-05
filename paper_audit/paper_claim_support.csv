@@ -1,0 +1,9 @@
+﻿claim,support_status,evidence,allowed_wording
+Subject-independent split,SUPPORTED,table_split.csv,The manifests use a subject-independent split.
+Actual split is 35/8/7 subjects,SUPPORTED,table_split.csv,"The verified subject split is 35 train, 8 validation, 7 test."
+Adaptive modifies probabilities although hard predictions are identical,SUPPORTED,adaptive_analysis.csv,Adaptive changes probabilities/calibration metrics but produces identical hard decisions to average.
+Adaptive weight distribution relative to equal weighting,SUPPORTED,adaptive_analysis.csv,Adaptive weights are close to equal weighting and bounded by the softmax-confidence formula.
+Front/Side quantitative complementarity,SUPPORTED_DESCRIPTIVE,table_complementarity.csv,Front and Side make partly complementary errors.
+Occlusion explanations explain failures,NEEDS_MANUAL_VISUAL_REVIEW,qualitative_candidates.csv,Use only as candidate qualitative cases.
+Fusion vs Front significant,NOT_SUPPORTED_AS_STRONG_CLAIM,table_statistics.csv,Fusion is a point-estimate improvement; cluster-bootstrap CI crosses zero.
+Fusion vs Side cluster CI does not cross zero,SUPPORTED,table_statistics.csv,Fusion improvement over Side is supported by cluster-bootstrap CI above zero.

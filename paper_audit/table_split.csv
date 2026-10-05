@@ -1,0 +1,4 @@
+﻿split,subject_count,subjects,stride,front_safe,front_phone,front_total,side_safe,side_phone,side_total,paired_safe_per_view,paired_phone_per_view,paired_total_per_view,front_side_identity_match,front_side_identity_symmetric_difference,final_master_sample_count,status,evidence
+train,35,5 6 7 9 12 13 14 16 18 19 23 24 25 26 28 29 30 31 32 33 34 35 36 37 38 39 40 43 44 45 46 47 48 49 50,30,176,908,1084,176,908,1084,176,908,1084,True,0,1084,VERIFIED_PASS,manifest_split filtered (frame-1)%30==0
+val,8,1 2 3 15 20 22 27 41,30,34,191,225,34,191,225,34,191,225,True,0,225,VERIFIED_PASS,manifest_split filtered (frame-1)%30==0
+test,7,4 8 10 11 17 21 42,30,40,180,220,40,180,220,40,180,220,True,0,220,VERIFIED_PASS,manifest_split filtered (frame-1)%30==0

@@ -21,6 +21,12 @@ def get(d, *keys):
         d = d.get(key)
     return d
 
+def first_present(*values):
+    for value in values:
+        if value is not None:
+            return value
+    return None
+
 def delta(a, b):
     if a is None or b is None:
         return None
@@ -46,11 +52,13 @@ for exp in experiments:
     side_val = load(exp / 'results/side/val_eval_metrics.json')
     side_test = load(exp / 'results/side/test_eval_metrics.json')
     fusion = load(exp / 'results/fusion/fusion_metrics.json')
+    front_resolved = get(front_summary, 'resolved_config') or get(front_test, 'hyperparameters') or {}
+    side_resolved = get(side_summary, 'resolved_config') or get(side_test, 'hyperparameters') or {}
     rows.append({
         'Experiment': exp.name,
-        'Run Type': resolved.get('run_type', 'experiment_run'),
-        'Stride': resolved.get('frame_stride'),
-        'Seed Training': resolved.get('seed_training'),
+        'Run Type': first_present(front_resolved.get('run_type'), side_resolved.get('run_type'), resolved.get('run_type'), 'experiment_run'),
+        'Stride': first_present(front_resolved.get('frame_stride'), side_resolved.get('frame_stride'), resolved.get('frame_stride')),
+        'Seed Training': first_present(front_resolved.get('seed_training'), side_resolved.get('seed_training'), resolved.get('seed_training')),
         'Front Train Eval F1': front_train.get('f1_macro'),
         'Front Val Eval F1': front_val.get('f1_macro'),
         'Front F1 Gap': delta(front_train.get('f1_macro'), front_val.get('f1_macro')),

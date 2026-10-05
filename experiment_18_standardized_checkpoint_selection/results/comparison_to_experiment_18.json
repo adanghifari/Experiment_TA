@@ -1,0 +1,140 @@
+{
+  "variant": "experiment_18_standardized_checkpoint_selection",
+  "parent": "experiment_18",
+  "scope": "Side checkpoint-selection criterion only; no Paper_TA changes.",
+  "front": {
+    "parent": {
+      "checkpoint_selection": {
+        "monitored_metric": "val_macro_f1",
+        "mode": "max",
+        "reason": "Selected by validation val_macro_f1."
+      },
+      "best_epoch": 9,
+      "test_macro_f1": 0.76626,
+      "test_accuracy": 0.86364
+    },
+    "variant": {
+      "checkpoint_selection": {
+        "monitored_metric": "val_macro_f1",
+        "mode": "max",
+        "reason": "Selected by validation val_macro_f1."
+      },
+      "early_stopping": {
+        "monitored_metric": "val_macro_f1",
+        "mode": "max",
+        "patience": 4,
+        "stopped_after_epoch": 13
+      },
+      "best_epoch": 9,
+      "test_macro_f1": 0.76626,
+      "test_accuracy": 0.86364
+    },
+    "delta_variant_minus_parent": {
+      "test_macro_f1": 0.0,
+      "test_accuracy": 0.0
+    }
+  },
+  "side": {
+    "parent": {
+      "checkpoint_selection": {
+        "monitored_metric": "val_loss",
+        "mode": "min",
+        "reason": "Selected by validation val_loss."
+      },
+      "best_epoch": 26,
+      "test_macro_f1": 0.67468,
+      "test_accuracy": 0.80455
+    },
+    "variant": {
+      "checkpoint_selection": {
+        "monitored_metric": "val_macro_f1",
+        "mode": "max",
+        "reason": "Selected by validation val_macro_f1."
+      },
+      "early_stopping": {
+        "monitored_metric": "val_loss",
+        "mode": "min",
+        "patience": 5,
+        "stopped_after_epoch": 30
+      },
+      "best_epoch": 15,
+      "test_macro_f1": 0.63045,
+      "test_accuracy": 0.80455
+    },
+    "delta_variant_minus_parent": {
+      "test_macro_f1": -0.04423,
+      "test_accuracy": 0.0
+    }
+  },
+  "fusion": {
+    "average_fusion": {
+      "parent_macro_f1": 0.81113,
+      "variant_macro_f1": 0.76827,
+      "delta_variant_minus_parent": -0.04286,
+      "parent_accuracy": 0.89545,
+      "variant_accuracy": 0.88182
+    },
+    "adaptive_fusion": {
+      "parent_macro_f1": 0.81113,
+      "variant_macro_f1": 0.76827,
+      "delta_variant_minus_parent": -0.04286,
+      "parent_accuracy": 0.89545,
+      "variant_accuracy": 0.88182
+    }
+  },
+  "configuration_checks": {
+    "front_common_config_equal": true,
+    "side_common_config_equal_except_checkpoint_monitor": true,
+    "front": {
+      "all_common_fields_equal": true,
+      "different_common_fields": {}
+    },
+    "side": {
+      "all_common_fields_equal": true,
+      "different_common_fields": {}
+    },
+    "expected_monitor_change": {
+      "parent_side_checkpoint": "val_loss",
+      "variant_side_checkpoint": "val_macro_f1",
+      "variant_side_checkpoint_mode": "max",
+      "variant_side_early_stopping": "val_loss",
+      "variant_side_early_stopping_mode": "min",
+      "variant_side_early_stopping_patience": 5,
+      "variant_side_scheduler_monitor": "val_macro_f1",
+      "variant_side_scheduler_patience": 2
+    }
+  },
+  "file_identity_checks": {
+    "src/dataset.py": {
+      "parent_sha256": "efa8d324ebc5906af6ece66db54e3ab8a58de6a69b1453418541d58d21f88ba5",
+      "same_in_variant": true
+    },
+    "src/model.py": {
+      "parent_sha256": "afdb54b59aa72a2da271dd19924787938972268a79166e0162808dd3d4737b66",
+      "same_in_variant": true
+    },
+    "src/evaluate.py": {
+      "parent_sha256": "bcb72c59647788ef7c3f047546a88bdb12ac19b4457708513adcb6f38680eded",
+      "same_in_variant": true
+    },
+    "src/fusion.py": {
+      "parent_sha256": "68a20c17e91725f8ef1bed7eb017490271537f52d6f017c5e0bb9b012cd82062",
+      "same_in_variant": true
+    },
+    "src/metrics.py": {
+      "parent_sha256": "f0ffb41cd2b05f427e500385779e80cefba5912158a35eb776004ab3a6e38a45",
+      "same_in_variant": true
+    },
+    "manifest_split.csv": {
+      "sha256": "ca664e62724490517b22e32f5ba35a5247a1f411a040ce331cb7031b2d7d98cc"
+    },
+    "manifest_paired.csv": {
+      "sha256": "d38695983dd0223ff575d47002479c73b7790671767eceb443d110e2d50f29b8"
+    },
+    "front_test_predictions.csv": {
+      "parent_sha256": "13291b5ae1c49a5400b858e02b7dfa187ee73aeae218b1ae82aadf7d11d530ac",
+      "variant_sha256": "13291b5ae1c49a5400b858e02b7dfa187ee73aeae218b1ae82aadf7d11d530ac",
+      "same": true
+    }
+  }
+}

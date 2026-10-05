@@ -1,5 +1,5 @@
 {
-  "frame_stride": 1,
+  "frame_stride": 15,
   "learning_rate_front": 5e-05,
   "learning_rate_side": 5e-05,
   "weight_decay_front": 0.0001,

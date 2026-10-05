@@ -1,0 +1,3 @@
+﻿model,best_epoch,actual_epochs,selected_train_loss,selected_val_loss,selected_train_macro_f1,selected_val_macro_f1,train_val_loss_gap,train_val_f1_gap,test_macro_f1,health_flag,status
+Front,9,,0.47353,0.51736,0.69929,0.72581,0.04383,-0.02652,0.76626,negative train-validation F1 gap; no overfitting tendency by this descriptive gap criterion,DESCRIPTIVE_NOT_CAUSAL
+Side,26,,0.3948,0.50217,0.79013,0.68238,0.10737,0.10775,0.67468,positive train-validation F1 gap; overfitting tendency/risk,DESCRIPTIVE_NOT_CAUSAL

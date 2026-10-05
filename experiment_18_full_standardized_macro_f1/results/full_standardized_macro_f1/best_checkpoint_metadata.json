@@ -1,0 +1,192 @@
+{
+  "front": {
+    "view": "front",
+    "best_epoch": 9,
+    "checkpoint_path": "D:\\Skripsi\\Experiment_TA\\experiment_18_full_standardized_macro_f1\\checkpoints\\full_standardized_macro_f1\\front\\best.pt",
+    "checkpoint_sha256": "3b87de7c597ddaf7cf51022dfe47c0d5c325316d8d207e743e19e1286061b8b8",
+    "history_path": "D:\\Skripsi\\Experiment_TA\\experiment_18_full_standardized_macro_f1\\results\\full_standardized_macro_f1\\front\\history.json",
+    "history_csv_path": "D:\\Skripsi\\Experiment_TA\\experiment_18_full_standardized_macro_f1\\results\\full_standardized_macro_f1\\front\\history.csv",
+    "checkpoint_selection": {
+      "monitored_metric": "val_macro_f1",
+      "mode": "max",
+      "reason": "Selected by validation val_macro_f1."
+    },
+    "early_stopping": {
+      "monitored_metric": "val_macro_f1",
+      "mode": "max",
+      "patience": 4,
+      "stopped_after_epoch": 13
+    },
+    "resolved_config": {
+      "view": "front",
+      "run_type": "experiment_run",
+      "learning_rate": 3e-05,
+      "weight_decay": 0.0005,
+      "dropout": 0.4,
+      "label_smoothing": 0.0,
+      "class_weights": [
+        2.5,
+        1.0
+      ],
+      "class_weight_gamma": 1.0,
+      "freeze_stages": 5,
+      "early_stopping_patience": 4,
+      "early_stopping_monitor": "val_macro_f1",
+      "early_stopping_mode": "max",
+      "lr_scheduler_patience": 1,
+      "lr_scheduler_factor": 0.5,
+      "frame_stride": 30,
+      "threshold": 0.5,
+      "seed": 42,
+      "seed_training": true,
+      "batch_size": 32,
+      "checkpoint_monitor": "val_macro_f1",
+      "checkpoint_monitor_mode": "max",
+      "optimizer": "AdamW",
+      "scheduler": "ReduceLROnPlateau",
+      "scheduler_monitor": "val_macro_f1",
+      "scheduler_step_timing": "after_validation",
+      "backbone": "EfficientNetV2-S",
+      "pretrained": true,
+      "loss_function": "CrossEntropyLoss",
+      "augmentation_train": {
+        "random_horizontal_flip": true,
+        "random_rotation_degree": 68,
+        "color_jitter_factor": 1.2
+      },
+      "augmentation_eval": {
+        "random_horizontal_flip": false,
+        "random_rotation_degree": 0,
+        "color_jitter_factor": 0
+      },
+      "class_weight_gamma_scope": "training_class_weights_only_not_fusion"
+    },
+    "best_epoch_metrics": {
+      "epoch": 9,
+      "train_loss": 0.47353,
+      "train_accuracy": 0.83523,
+      "train_macro_f1": 0.69929,
+      "train_precision_macro": 0.69929,
+      "train_recall_macro": 0.69929,
+      "val_loss": 0.51736,
+      "val_accuracy": 0.84444,
+      "val_macro_f1": 0.72581,
+      "val_precision_macro": 0.70847,
+      "val_recall_macro": 0.75123,
+      "f1_gap": -0.02652,
+      "loss_gap": 0.04383,
+      "learning_rate": 3e-05,
+      "epoch_seconds": 9.24
+    },
+    "environment": {
+      "timestamp": "2026-09-18T18:01:59",
+      "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pytorch_version": "2.11.0+cu128",
+      "timm_version": "1.0.27",
+      "cuda_available": true,
+      "cuda_version": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "git_commit": "54b5ec14ee7738d36df3eafd22f5f079c8e75a7f",
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "elapsed_seconds": 120.75,
+    "elapsed_minutes": 2.012
+  },
+  "side": {
+    "view": "side",
+    "best_epoch": 15,
+    "checkpoint_path": "D:\\Skripsi\\Experiment_TA\\experiment_18_full_standardized_macro_f1\\checkpoints\\full_standardized_macro_f1\\side\\best.pt",
+    "checkpoint_sha256": "92afbec084192fa08c157174528c0bb49a5af40f2ae8b89209ac540b9c6c4645",
+    "history_path": "D:\\Skripsi\\Experiment_TA\\experiment_18_full_standardized_macro_f1\\results\\full_standardized_macro_f1\\side\\history.json",
+    "history_csv_path": "D:\\Skripsi\\Experiment_TA\\experiment_18_full_standardized_macro_f1\\results\\full_standardized_macro_f1\\side\\history.csv",
+    "checkpoint_selection": {
+      "monitored_metric": "val_macro_f1",
+      "mode": "max",
+      "reason": "Selected by validation val_macro_f1."
+    },
+    "early_stopping": {
+      "monitored_metric": "val_macro_f1",
+      "mode": "max",
+      "patience": 5,
+      "stopped_after_epoch": 20
+    },
+    "resolved_config": {
+      "view": "side",
+      "run_type": "experiment_run",
+      "learning_rate": 2e-05,
+      "weight_decay": 0.001,
+      "dropout": 0.4,
+      "label_smoothing": 0.0,
+      "class_weights": [
+        2.5,
+        1.0
+      ],
+      "class_weight_gamma": 1.0,
+      "freeze_stages": 4,
+      "early_stopping_patience": 5,
+      "early_stopping_monitor": "val_macro_f1",
+      "early_stopping_mode": "max",
+      "lr_scheduler_patience": 2,
+      "lr_scheduler_factor": 0.5,
+      "frame_stride": 30,
+      "threshold": 0.5,
+      "seed": 42,
+      "seed_training": true,
+      "batch_size": 32,
+      "checkpoint_monitor": "val_macro_f1",
+      "checkpoint_monitor_mode": "max",
+      "optimizer": "AdamW",
+      "scheduler": "ReduceLROnPlateau",
+      "scheduler_monitor": "val_macro_f1",
+      "scheduler_step_timing": "after_validation",
+      "backbone": "EfficientNetV2-S",
+      "pretrained": true,
+      "loss_function": "CrossEntropyLoss",
+      "augmentation_train": {
+        "random_horizontal_flip": true,
+        "random_rotation_degree": 45,
+        "color_jitter_factor": 0.8
+      },
+      "augmentation_eval": {
+        "random_horizontal_flip": false,
+        "random_rotation_degree": 0,
+        "color_jitter_factor": 0
+      },
+      "class_weight_gamma_scope": "training_class_weights_only_not_fusion"
+    },
+    "best_epoch_metrics": {
+      "epoch": 15,
+      "train_loss": 0.48501,
+      "train_accuracy": 0.84754,
+      "train_macro_f1": 0.70578,
+      "train_precision_macro": 0.71794,
+      "train_recall_macro": 0.69587,
+      "val_loss": 0.53991,
+      "val_accuracy": 0.88,
+      "val_macro_f1": 0.75724,
+      "val_precision_macro": 0.76779,
+      "val_recall_macro": 0.748,
+      "f1_gap": -0.05147,
+      "loss_gap": 0.0549,
+      "learning_rate": 1e-05,
+      "epoch_seconds": 12.42
+    },
+    "environment": {
+      "timestamp": "2026-09-18T18:06:08",
+      "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "pytorch_version": "2.11.0+cu128",
+      "timm_version": "1.0.27",
+      "cuda_available": true,
+      "cuda_version": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "git_commit": "54b5ec14ee7738d36df3eafd22f5f079c8e75a7f",
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "elapsed_seconds": 242.39,
+    "elapsed_minutes": 4.04
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "original_experiment_18": {
+    "label": "18_original_mixed_reference",
+    "front_epoch": 9,
+    "side_epoch": 26,
+    "front_test_f1": 0.76626,
+    "side_test_f1": 0.67468,
+    "average_fusion_f1": 0.81113,
+    "adaptive_fusion_f1": 0.81113,
+    "average_fusion_acc": 0.89545,
+    "adaptive_fusion_acc": 0.89545,
+    "bootstrap_avg_vs_front": {
+      "comparison": "average_pred_vs_front_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.04487475995698731,
+      "ci95_low": -0.032702300061770995,
+      "ci95_high": 0.13884389171745493,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    },
+    "bootstrap_avg_vs_side": {
+      "comparison": "average_pred_vs_side_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.13645128171351606,
+      "ci95_low": 0.09800745235314207,
+      "ci95_high": 0.19126612106447805,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    }
+  },
+  "checkpoint_only_macro_f1": {
+    "label": "18_checkpoint_val_macro_f1",
+    "front_epoch": 9,
+    "side_epoch": 15,
+    "front_test_f1": 0.76626,
+    "side_test_f1": 0.63045,
+    "average_fusion_f1": 0.76827,
+    "adaptive_fusion_f1": 0.76827,
+    "average_fusion_acc": 0.88182,
+    "adaptive_fusion_acc": 0.88182,
+    "bootstrap_avg_vs_front": {
+      "comparison": "average_pred_vs_front_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.002015101137623043,
+      "ci95_low": -0.07057674205454678,
+      "ci95_high": 0.07733790015997177,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    },
+    "bootstrap_avg_vs_side": {
+      "comparison": "average_pred_vs_side_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.1378166301198681,
+      "ci95_low": 0.08525416744594816,
+      "ci95_high": 0.20421072153614075,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    }
+  },
+  "checkpoint_only_val_loss": {
+    "label": "18_checkpoint_val_loss",
+    "front_epoch": 12,
+    "side_epoch": 26,
+    "front_test_f1": 0.77256,
+    "side_test_f1": 0.67468,
+    "average_fusion_f1": 0.76751,
+    "adaptive_fusion_f1": 0.76751,
+    "average_fusion_acc": 0.87273,
+    "adaptive_fusion_acc": 0.87273,
+    "bootstrap_avg_vs_front": {
+      "comparison": "average_pred_vs_front_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": -0.005047367395906277,
+      "ci95_low": -0.029492284718765527,
+      "ci95_high": 0.04106913919413924,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    },
+    "bootstrap_avg_vs_side": {
+      "comparison": "average_pred_vs_side_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.09283275544730474,
+      "ci95_low": 0.011681129950713607,
+      "ci95_high": 0.15940036129310586,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    }
+  },
+  "full_standardized_macro_f1": {
+    "label": "18_checkpoint_val_macro_f1_and_earlystopping_val_macro",
+    "front_epoch": 9,
+    "side_epoch": 15,
+    "front_test_f1": 0.76626,
+    "side_test_f1": 0.63045,
+    "average_fusion_f1": 0.76827,
+    "adaptive_fusion_f1": 0.76827,
+    "average_fusion_acc": 0.88182,
+    "adaptive_fusion_acc": 0.88182,
+    "bootstrap_avg_vs_front": {
+      "comparison": "average_pred_vs_front_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.002015101137623043,
+      "ci95_low": -0.07057674205454678,
+      "ci95_high": 0.07733790015997177,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    },
+    "bootstrap_avg_vs_side": {
+      "comparison": "average_pred_vs_side_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.1378166301198681,
+      "ci95_low": 0.08525416744594816,
+      "ci95_high": 0.20421072153614075,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    }
+  },
+  "full_standardized_val_loss": {
+    "label": "18_checkpoint_val_loss_and_earlystopping_val_loss",
+    "front_epoch": 21,
+    "side_epoch": 26,
+    "front_test_f1": 0.73358,
+    "side_test_f1": 0.67468,
+    "average_fusion_f1": 0.75045,
+    "adaptive_fusion_f1": 0.75045,
+    "average_fusion_acc": 0.87273,
+    "adaptive_fusion_acc": 0.87273,
+    "bootstrap_avg_vs_front": {
+      "comparison": "average_pred_vs_front_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.0168622896992342,
+      "ci95_low": -0.013725654541981047,
+      "ci95_high": 0.05963427360266802,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    },
+    "bootstrap_avg_vs_side": {
+      "comparison": "average_pred_vs_side_pred",
+      "metric": "macro_f1",
+      "method": "subject_cluster_bootstrap_test_subjects",
+      "n_clusters": 7,
+      "n_boot": 10000,
+      "confidence_level": 0.95,
+      "seed": 42,
+      "observed_diff": 0.0757663109511928,
+      "ci95_low": -0.017645534505094672,
+      "ci95_high": 0.15695501341980655,
+      "subjects": [
+        "10",
+        "11",
+        "17",
+        "21",
+        "4",
+        "42",
+        "8"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+﻿item,proposal_or_planned_value,actual_repo_value,status,evidence,paper_action
+task definition,NOT_AVAILABLE_FROM_REPO,binary classification: safe driving vs phone use,SUPPORTED,config/results,USE_ACTUAL_VALUE
+included activities,NOT_AVAILABLE_FROM_REPO,"A1,A5,A6,A7,A8,A9",SUPPORTED,config.py,USE_ACTUAL_VALUE
+binary mapping,NOT_AVAILABLE_FROM_REPO,safe_driving=0; phone_use=1,SUPPORTED,config.py,USE_ACTUAL_VALUE
+positive class,NOT_AVAILABLE_FROM_REPO,phone_use,SUPPORTED,prob_phone columns,USE_ACTUAL_VALUE
+raw synchronized pair count,NOT_AVAILABLE_FROM_REPO,41595,SUPPORTED,manifest_paired.csv,USE_ACTUAL_VALUE
+safe count manifest_split before stride,NOT_AVAILABLE_FROM_REPO,13522,SUPPORTED,manifest_split.csv,USE_ACTUAL_VALUE
+phone count manifest_split before stride,NOT_AVAILABLE_FROM_REPO,69668,SUPPORTED,manifest_split.csv,USE_ACTUAL_VALUE
+view mapping,NOT_AVAILABLE_FROM_REPO,RGB1=side; RGB2=front,SUPPORTED,config.py,USE_ACTUAL_VALUE
+dataset correction,NOT_AVAILABLE_FROM_REPO,RGB1/S31 AC9-AC10 correction implemented; separate visual proof not found,PARTIAL_SUPPORTED,config.py; dataset_integrity.csv,WORD_WITH_CAVEAT
+subject split counts,NOT_AVAILABLE_FROM_REPO,train=35; val=8; test=7,SUPPORTED,table_split.csv,USE_ACTUAL_VALUE
+subject IDs,NOT_AVAILABLE_FROM_REPO,train: 5 6 7 9 12 13 14 16 18 19 23 24 25 26 28 29 30 31 32 33 34 35 36 37 38 39 40 43 44 45 46 47 48 49 50 | val: 1 2 3 15 20 22 27 41 | test: 4 8 10 11 17 21 42,SUPPORTED,table_split.csv,USE_ACTUAL_VALUE
+stride,NOT_AVAILABLE_FROM_REPO,30,SUPPORTED,resolved_config,USE_ACTUAL_VALUE
+post-stride counts,NOT_AVAILABLE_FROM_REPO,train safe/phone/total=176/908/1084; val=34/191/225; test=40/180/220 per view,SUPPORTED,table_split.csv,USE_ACTUAL_VALUE
+input size,NOT_AVAILABLE_FROM_REPO,224,SUPPORTED,config.py,USE_ACTUAL_VALUE
+normalization,NOT_AVAILABLE_FROM_REPO,ImageNet mean/std,SUPPORTED,config.py,USE_ACTUAL_VALUE
+augmentation,NOT_AVAILABLE_FROM_REPO,front rot=68 jitter=1.2; side rot=45 jitter=0.8; hflip default p=0.5,SUPPORTED,dataset.py/config.py,USE_ACTUAL_VALUE
+backbone,NOT_AVAILABLE_FROM_REPO,timm tf_efficientnetv2_s / EfficientNetV2-S,SUPPORTED,model.py/config.py,USE_ACTUAL_VALUE
+pretrained initialization,NOT_AVAILABLE_FROM_REPO,True,SUPPORTED,train metadata,USE_ACTUAL_VALUE
+classifier,NOT_AVAILABLE_FROM_REPO,"Dropout -> Linear(in_features,2)",SUPPORTED,model.py,USE_ACTUAL_VALUE
+loss,NOT_AVAILABLE_FROM_REPO,CrossEntropyLoss with class weights and label smoothing,SUPPORTED,train.py,USE_ACTUAL_VALUE
+optimizer,NOT_AVAILABLE_FROM_REPO,AdamW,SUPPORTED,train.py,USE_ACTUAL_VALUE
+Front LR,NOT_AVAILABLE_FROM_REPO,3e-05,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+Side LR,NOT_AVAILABLE_FROM_REPO,2e-05,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+Front weight decay,NOT_AVAILABLE_FROM_REPO,0.0005,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+Side weight decay,NOT_AVAILABLE_FROM_REPO,0.001,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+batch size,NOT_AVAILABLE_FROM_REPO,32,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+max epochs,NOT_AVAILABLE_FROM_REPO,30,SUPPORTED,config/final_master,USE_ACTUAL_VALUE
+dropout,NOT_AVAILABLE_FROM_REPO,Front=0.4; Side=0.4,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+freeze stages,NOT_AVAILABLE_FROM_REPO,Front=5; Side=4,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+class weights,NOT_AVAILABLE_FROM_REPO,"[2.5,1.0] order safe,phone",SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+scheduler,NOT_AVAILABLE_FROM_REPO,ReduceLROnPlateau factor=0.5,SUPPORTED,train metadata,USE_ACTUAL_VALUE
+early stopping,NOT_AVAILABLE_FROM_REPO,Front patience=4; Side patience=5,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+checkpoint criterion,NOT_AVAILABLE_FROM_REPO,Front val_macro_f1 max; Side val_loss min,SUPPORTED,checkpoint metadata,USE_ACTUAL_VALUE
+Average formula,NOT_AVAILABLE_FROM_REPO,0.5*p_front+0.5*p_side,SUPPORTED,fusion.py,USE_ACTUAL_VALUE
+Adaptive formula,NOT_AVAILABLE_FROM_REPO,softmax over abs(p-0.5) confidence,SUPPORTED,fusion.py/adaptive_analysis.csv,USE_ACTUAL_VALUE
+decision threshold,NOT_AVAILABLE_FROM_REPO,0.5,SUPPORTED,config.py,USE_ACTUAL_VALUE
+evaluation metrics,NOT_AVAILABLE_FROM_REPO,"Accuracy, macro P/R/F1, per-class, ROC-AUC, PR-AUC, ECE, Brier, CM",SUPPORTED,metric_definition_audit.csv,USE_ACTUAL_VALUE
